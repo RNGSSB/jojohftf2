@@ -250,6 +250,7 @@ randomselect
  ;
  ;Insert your stages below.
 
+stages/school/sickbay.def
 
 ;-------------------------------------------------------------------------------
 [Options]
