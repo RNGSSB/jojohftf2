@@ -1,0 +1,23 @@
+; ‚±‚±‚ÉƒLƒƒƒ‰î•ñ‚ğ‘‚¢‚Ä‚­‚¾‚³‚¢
+[Info]
+name = "Giorno Giovanna"        ;ƒLƒƒƒ‰‚Ì–¼‘O
+displayname = "Giorno Giovanna" ;•\¦‚³‚ê‚éƒLƒƒƒ‰‚Ì–¼‘O
+versiondate = 02,16,2013    ;ƒLƒƒƒ‰‚ÌXVî•ñ
+mugenversion = 11,22,2000   ;ƒLƒƒƒ‰‚ª“®‚­mugen‚Ìƒo[ƒWƒ‡ƒ“
+author = "‚ ‚Ü‚è‚à‚Ì"         ;ƒLƒƒƒ‰‚Ì»ìÒ–¼
+pal.defaults = 1      ;“G‚Æ‚µ‚Ä‚Å‚éƒLƒƒƒ‰‚ÌƒpƒŒƒbƒg
+
+; Files for the player
+[Files]
+cmd	= amaAI/Giorno.cmd	;ƒLƒƒƒ‰‚ÌƒRƒ}ƒ“ƒh
+cns     = amaAI/Giorno.cns   ;ƒLƒƒƒ‰‚ÌƒvƒƒOƒ‰ƒ€
+st      = amaAI/Giorno.cns   ;ƒLƒƒƒ‰‚ÌƒvƒƒOƒ‰ƒ€
+st1      = amaAI/tandem.cns   ;ƒLƒƒƒ‰‚ÌƒvƒƒOƒ‰ƒ€
+st2 = normal.cns
+st3 = helper.cns
+st4 = stand_normal.cns
+stcommon = amaAI/giogiocommon.cns 
+sprite  = Giorno.sff   ;ƒLƒƒƒ‰‚ÌŠG
+anim    = Giorno.air   ;ƒLƒƒƒ‰‚Ì“®‚«
+sound   = Giorno.snd   ;ƒLƒƒƒ‰‚Ì‰¹
+pal1    = Giorno.act  ;ƒLƒƒƒ‰‚ÌFiÅ‘å‚P‚QŒÂj 

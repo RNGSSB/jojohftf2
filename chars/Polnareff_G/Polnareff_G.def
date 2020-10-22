@@ -1,0 +1,36 @@
+; ---- Created by Uno Tag Team Patcher ---- ;
+
+[Info]
+Name         = "Polnareff"
+DisplayName  = "Polnareff"
+VersionDate  = 12,20,2008
+MugenVersion = 1.1
+Author       = "Nimame" 
+Pal.Defaults = 1
+
+
+
+[Files]
+Cmd      =polnareff_unotag\polnareff.cmd
+Cns      = polnareff.cns
+St	 = pol_common.cns
+St2	 = polnareff.cns
+St3	 = chariots.cns
+St4	 =polnareff_unotag\polnareff-2.cns
+St5	 = config.txt
+St6	 = dem.cns
+st7 = normal.cns
+st8 = stand_normal.cns
+StCommon = common1.cns
+Sprite   = polnareff.sff
+Anim     = polnareff.air
+Sound    = polnareff.snd
+
+Pal1 = color\pol1.act
+movelist = movelist.dat     ;Ikemen feature: Movelist
+
+
+
+
+
+st9=polnareff_unotag\tag_system.cns

@@ -1,0 +1,101 @@
+; ---- Created by Uno Tag Team Patcher ---- ;
+
+
+
+
+
+
+
+
+
+
+[Info]
+Name         = "Guido Mista"
+DisplayName  = "Guido Mista"  ;M.U.G.E.N�Ŏ��ۂɕ\������閼�O�i�ȗ��\�j
+VersionDate  = 04,14,2002
+MugenVersion = 1.1
+Author       = "amarimono"
+Pal.Defaults = 1,1,1,1
+
+
+
+
+
+; �������t�@�C���̔F���ŕs���I�����N����\�������̂ŁA
+
+
+
+
+
+
+
+
+
+
+
+[Files]
+Cmd     =amaAI_unotag\mista.cmd
+Cns     =amaAI_unotag\mista.cns
+St      =amaAI_unotag\mista.cns
+st2 = normal.cns
+st3 = custom.cns
+st4 = helper.cns
+st5 = speciak.cns
+st6 = hyper.cns
+
+
+StCommon = amaAI\mistacommon.cns
+Sprite  = mista_G.sff
+Anim    = mista.air
+Sound   = mista.snd
+
+
+
+; �L�����N�^�[�̐F���`����t�@�C���͍ő�P�Q�܂œo�^���\�ł��B
+
+
+
+
+; �ʐ��\�o�[�W������P�̂̃L�����̒��ō�鎖���\�B
+
+
+
+Pal1 = mista.act
+Pal2 = mista2.act
+Pal3 = mista3.act
+Pal4 = mista4.act
+Pal5 = mista5.act
+Pal6 = mista6.act
+
+Pal7 = mista.act
+Pal8 = mista.act
+st9=amaAI_unotag\tag_system.cns
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[Arcade]
+Intro.Storyboard = intro.def
+Ending.Storyboard = ending.def
+
+
+
+
+
+
+

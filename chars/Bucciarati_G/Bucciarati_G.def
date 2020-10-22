@@ -1,0 +1,45 @@
+; ---- Created by Uno Tag Team Patcher ---- ;
+
+[Info]
+Name         = "Bruno Bucciarati"
+DisplayName  = "Bruno Bucciarati"  ;�\������閼�O�i�ȗ��j
+VersionDate  = 01,07,2010
+MugenVersion = 1.1
+Author       = "Mr.Giang"
+Pal.Defaults = 1
+
+
+
+[Files]
+Cmd     =buch_unotag\buch.cmd.cns
+Cns     =buch_unotag\buch.cns
+St      =buch_unotag\buch.cns
+st1     = damage.cns
+st2     = dem_buch.cns
+st3     = _Config.txt
+st4 = normal.cns
+st5 = helper.cns
+st6 = normal_stand.cns
+st7 = hyper.cns
+
+
+StCommon = common1.cns
+Sprite  = buch.sff
+Anim    = buch.air
+Sound   = buch.snd
+
+
+Pal1 = white.act
+st9=buch_unotag\tag_system.cns
+
+
+
+
+
+
+
+
+
+[Arcade]
+
+
