@@ -9216,7 +9216,7 @@ sound = S8000,10
 pos = 0,0
 darken = 0
 p2defmul = 1
-poweradd = -5000
+poweradd = -3000
 unhittable = 0
 persistent = 0
 

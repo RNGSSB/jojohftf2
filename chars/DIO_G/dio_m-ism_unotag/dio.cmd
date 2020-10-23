@@ -533,19 +533,19 @@ time = 12
 [Command]
 name = "Guard Cancel"
 command = ~B,DB,$D,x
-time = 10
+time = 3
 buffer.time = 3
  
 [Command]
 name = "Guard Cancel"
 command = ~B,DB,$D,y
-time = 10
+time = 3
 buffer.time = 3
  
 [Command]
 name = "Guard Cancel"
 command = ~B,DB,$D,z
-time = 10
+time = 3
 buffer.time = 3
 
 [Command]
