@@ -18,7 +18,6 @@ pausemovetime = 99999999
 scale = 0,0
 ontop = 1
 ownpal = 1
-
 [State -2]
 type = Explod
 trigger1 = !numexplod(2602)

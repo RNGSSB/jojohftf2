@@ -509,21 +509,21 @@ time = 12
 
 [Command]
 name = "Guard Cancel"
-command = ~B,DB,$D,x
-time = 10
-buffer.time = 3
+command = ~F,D,DF,x
+time = 13
+
  
 [Command]
 name = "Guard Cancel"
-command = ~B,DB,$D,y
-time = 10
-buffer.time = 3
+command = ~F,D,DF,x
+time = 13
+
  
 [Command]
 name = "Guard Cancel"
-command = ~B,DB,$D,z
-time = 3
-buffer.time = 10
+command = ~F,D,DF,x
+time = 13
+
 
 [Command]
 name = "longjump"
@@ -1053,27 +1053,6 @@ triggerall = Helper(10000),stateno != 10840
 trigger1 = ctrl || stateno = 40 || (stateno = 100 && AnimElemTime(2) >= 1) || stateno = 101 || (stateno = 105 && AnimElemTime(2) >= 1)
 trigger2 = StateNo = 195
 trigger3 = StateNo = 196
-trigger4 = StateNo = 300
-trigger5 = StateNo = 301
-trigger6 = StateNo = 310
-trigger7 = StateNo = 311
-trigger8 = StateNo = 320
-trigger9 = StateNo = 340
-trigger10 = StateNo = 500
-trigger11 = StateNo = 510
-trigger12 = StateNo = 5201
-trigger13 = stateno = 321
-trigger14 = stateno = 341
-trigger15 = stateno = 520
-trigger16 = stateno = 521
-trigger17 = stateno = 511
-trigger18 = stateno = 501
-trigger19 = stateno = 330
-trigger20 = stateno = 342
-trigger21 = stateno = 312
-trigger22 = stateno = 532
-trigger23 = stateno = 530	
-trigger24 = stateno = 331	
 trigger25 = stateno = 1050
 trigger26 = stateno = 1250
 trigger27 = stateno = [1150,1180]
@@ -1161,28 +1140,7 @@ triggerall = NumHelper(10000)
 triggerall = Helper(10000),stateno != 10840
 trigger1 = ctrl || stateno = 40 || (stateno = 100 && AnimElemTime(2) >= 1) || stateno = 101 || (stateno = 105 && AnimElemTime(2) >= 1)
 trigger2 = StateNo = 195
-trigger3 = StateNo = 196
-trigger4 = StateNo = 300
-trigger5 = StateNo = 301
-trigger6 = StateNo = 310
-trigger7 = StateNo = 311
-trigger8 = StateNo = 320
-trigger9 = StateNo = 340
-trigger10 = StateNo = 500
-trigger11 = StateNo = 510
-trigger12 = StateNo = 5201
-trigger13 = stateno = 321
-trigger14 = stateno = 341
-trigger15 = stateno = 520
-trigger16 = stateno = 521
-trigger17 = stateno = 511
-trigger18 = stateno = 501
-trigger19 = stateno = 330
-trigger20 = stateno = 342
-trigger21 = stateno = 312
-trigger22 = stateno = 532
-trigger23 = stateno = 530	
-trigger24 = stateno = 331	
+trigger3 = StateNo = 196		
 trigger25 = stateno = 1050
 trigger26 = stateno = 1250
 trigger27 = stateno = [1150,1180]
@@ -1206,9 +1164,6 @@ triggerall = NumHelper(10000)
 triggerall = Helper(10000),stateno != 10840
 trigger1 = ctrl
 trigger2 = stateno = 10825
-trigger3 = StateNo = 700
-trigger4 = StateNo = 710
-trigger5 = StateNo = 720
 trigger6 = stateno = 1060
 ignorehitpause = 0
 
