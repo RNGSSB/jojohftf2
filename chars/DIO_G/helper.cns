@@ -552,7 +552,7 @@ type = Hitdef
 triggerall = root,var(0) = 1
 trigger1 = AnimElem = 14
 attr = S, SA
-hitflag = MAFD
+hitflag = MAF
 guardflag =
 animtype = heavy
 air.animtype = back
@@ -2724,7 +2724,7 @@ Trigger1 = Root,var(0) != -1
 Trigger1 = Root,var(0) != 2
 affectteam = B
 attr = A, HP
-hitflag = MAFDP
+hitflag = MAFP
 guardflag = 
 animtype = heavy
 air.animtype = back
@@ -6145,7 +6145,7 @@ triggerall = root,var(0) = 1
 trigger1 = root,stateno = [3120,3123]
 trigger1 = time >= 2
 attr = S, HP
-hitflag = MAFD
+hitflag = MAF
 guardflag =
 animtype = heavy
 air.animtype = back
@@ -7386,7 +7386,7 @@ type = Hitdef
 triggerall = root,var(0) = 1
 trigger1 = AnimElem = 2
 attr = S, SA
-hitflag = MAFD
+hitflag = MAF
 guardflag =
 animtype = heavy
 air.animtype = back
@@ -8081,7 +8081,7 @@ trigger2 = AnimElemTime(3) = 1
 trigger3 = AnimElem = 6
 trigger4 = AnimElem = 9
 attr = S, SA
-hitflag = MAFD
+hitflag = MAF
 guardflag =
 animtype = heavy
 air.animtype = back
@@ -8719,7 +8719,7 @@ trigger14 = AnimElem = 39
 trigger15 = AnimElem = 42
 trigger16 = AnimElem = 45
 attr = S, SA
-hitflag = MAFD
+hitflag = MAF
 guardflag =
 animtype = heavy
 air.animtype = back
@@ -9285,7 +9285,7 @@ type = Hitdef
 triggerall = root,var(0) = 1
 trigger1 = AnimElem = 5
 attr = S, SA
-hitflag = MAFD
+hitflag = MAF
 guardflag =
 animtype = heavy
 air.animtype = back

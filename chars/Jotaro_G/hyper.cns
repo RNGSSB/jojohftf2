@@ -3202,7 +3202,7 @@ trigger1 = animelem = 3
 trigger2 = !IsHelper
 trigger2 = animelem = 2
 attr = S, HA
-hitflag = MAFD
+hitflag = MAF
 guardflag =
 animtype = heavy
 air.animtype = back
@@ -3250,7 +3250,7 @@ trigger2 = animelemtime(18) < 0
 trigger3 = animelemtime(24) >= 0
 trigger3 = animelemtime(30) < 0
 attr = S, HA
-hitflag = MAFD
+hitflag = MAF
 guardflag =
 animtype = heavy
 air.animtype = back
@@ -3298,7 +3298,7 @@ trigger2 = animelemtime(24) < 0
 trigger3 = animelemtime(30) >= 0
 trigger3 = animelemtime(33) < 1
 attr = S, HA
-hitflag = MAFD
+hitflag = MAF
 guardflag =
 animtype = heavy
 air.animtype = back
@@ -3340,7 +3340,7 @@ triggerall = !IsHelper
 triggerall = var(0) = 1
 trigger1 = animelemtime(33) = 1
 attr = S, HA
-hitflag = MAFD
+hitflag = MAF
 guardflag =
 animtype = heavy
 air.animtype = back
@@ -3393,7 +3393,7 @@ trigger4 = animelemtime(45) < 0
 trigger5 = animelemtime(51) >= 0
 trigger5 = animelemtime(57) < 0
 attr = S, HA
-hitflag = MAFD
+hitflag = MAF
 guardflag =
 animtype = heavy
 air.animtype = back
@@ -3445,7 +3445,7 @@ trigger4 = animelemtime(51) < 0
 trigger5 = animelemtime(57) >= 0
 trigger5 = animelemtime(61) < 1
 attr = S, HA
-hitflag = MAFD
+hitflag = MAF
 guardflag =
 animtype = heavy
 air.animtype = back
@@ -3487,7 +3487,7 @@ triggerall = var(0) = 1
 trigger1 = IsHelper
 trigger1 = animelemtime(61) = 1
 attr = S, HA
-hitflag = MAFD
+hitflag = MAF
 guardflag =
 animtype = heavy
 air.animtype = back
@@ -4539,7 +4539,7 @@ triggerall = var(0) = 1
 triggerall = !var(1)
 trigger1 = animelem = 3
 attr = A, HA
-hitflag = MAFD
+hitflag = MAF
 guardflag =
 animtype = heavy
 air.animtype = back
@@ -4586,7 +4586,7 @@ trigger2 = animelemtime(18) < 0
 trigger3 = animelemtime(24) >= 0
 trigger3 = animelemtime(30) < 0
 attr = A, HA
-hitflag = MAFD
+hitflag = MAF
 guardflag =
 animtype = heavy
 air.animtype = back
@@ -4633,7 +4633,7 @@ trigger2 = animelemtime(24) < 0
 trigger3 = animelemtime(30) >= 0
 trigger3 = animelemtime(34) < 0
 attr = A, HA
-hitflag = MAFD
+hitflag = MAF
 guardflag =
 animtype = heavy
 air.animtype = back
@@ -5189,7 +5189,7 @@ triggerall = anim = 13151
 triggerall = !var(6)
 trigger1 = AnimElem = 3
 attr = S, HA
-hitflag = MAFD
+hitflag = MAF
 guardflag = MA
 animtype = heavy
 air.animtype = back
@@ -5236,7 +5236,7 @@ triggerall = anim = 13151
 triggerall = var(6)
 trigger1 = AnimElem = 3
 attr = S, HA
-hitflag = MAFD
+hitflag = MAF
 guardflag =
 animtype = heavy
 air.animtype = back
@@ -5283,7 +5283,7 @@ triggerall = var(0) != 1
 triggerall = anim = 13156
 trigger1 = AnimElem = 2
 attr = S, HA
-hitflag = MAFD
+hitflag = MAF
 guardflag = MA
 animtype = heavy
 air.animtype = back
@@ -5329,7 +5329,7 @@ trigger1 = AnimElem = 3
 trigger2 = anim = 13156
 trigger2 = AnimElem = 2
 attr = S, HA
-hitflag = MAFD
+hitflag = MAF
 guardflag =
 animtype = heavy
 air.animtype = back

@@ -1310,7 +1310,7 @@ trigger1 = animelem = 3
 attr = C, NA
 damage = 49,12
 priority = 5,Hit
-hitflag = MAFD
+hitflag = MAF
 guardflag = LA
 animtype = Middle
 air.animtype = Back
@@ -1440,7 +1440,7 @@ trigger1 = animelem = 2
 attr = C, NA
 damage = 42,0
 priority = 4,Hit
-hitflag = MAFD
+hitflag = MAF
 guardflag = LA
 animtype = Middle
 air.animtype = Back
@@ -1539,7 +1539,7 @@ trigger1 = animelem = 2
 attr = C, NA
 damage = 63,13
 priority = 4,Hit
-hitflag = MAFD
+hitflag = MAF
 guardflag = LA
 animtype = Heavy
 air.animtype = Back
@@ -1682,7 +1682,7 @@ trigger1 = animelem = 2
 attr = C, NA
 damage = 56,0
 priority = 4,Hit
-hitflag = MAFD
+hitflag = MAF
 guardflag = LA
 animtype = Middle
 air.animtype = Back

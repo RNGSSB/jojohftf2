@@ -1531,7 +1531,7 @@ channel = 1
 type = HitDef
 Trigger1 = animelemtime(3) = 0
 attr = S, HT
-hitflag = MAFD
+hitflag = MAF
 guardflag =
 priority = 1, Miss
 pausetime = 0, 0
@@ -5436,7 +5436,7 @@ type = Hitdef
 Trigger1 = var(0) != 1
 Trigger1 = animelem = 43
 attr = A, HP
-hitflag = MAFD
+hitflag = MAF
 guardflag = HA
 animtype = heavy
 air.animtype = back
@@ -5481,7 +5481,7 @@ type = Hitdef
 Trigger1 = var(0) = 1
 Trigger1 = animelem = 43
 attr = A, HA
-hitflag = MAFD
+hitflag = MAF
 guardflag = 
 animtype = heavy
 air.animtype = back
@@ -5628,7 +5628,7 @@ type = Hitdef
 Trigger1 = var(0) != 1
 Trigger1 = animelem = 1
 attr = A, HP
-hitflag = MAFD
+hitflag = MAF
 guardflag = LA
 animtype = heavy
 air.animtype = back
@@ -5672,7 +5672,7 @@ type = Hitdef
 Trigger1 = var(0) = 1
 Trigger1 = animelem = 1
 attr = A, HA
-hitflag = MAFD
+hitflag = MAF
 guardflag = 
 animtype = heavy
 air.animtype = back
@@ -6345,7 +6345,7 @@ Trigger10 = animelem = 50
 Trigger11 = animelem = 54
 Trigger12 = animelem = 58
 attr = A, HA
-hitflag = MAFD
+hitflag = MAF
 guardflag = HA
 animtype = heavy
 air.animtype = back
@@ -6397,7 +6397,7 @@ Trigger9 = animelem = 48
 Trigger10 = animelem = 52
 Trigger11 = animelem = 56
 attr = A, HA
-hitflag = MAFD
+hitflag = MAF
 guardflag = HA
 animtype = heavy
 air.animtype = back
@@ -6461,7 +6461,7 @@ Trigger21 = animelem = 54
 Trigger22 = animelem = 56
 Trigger23 = animelem = 58
 attr = A, HA
-hitflag = MAFD
+hitflag = MAF
 guardflag = 
 animtype = heavy
 air.animtype = back
@@ -6502,7 +6502,7 @@ type = Hitdef
 Trigger1 = var(0) != 1
 Trigger1 = animelem = 70
 attr = A, HA
-hitflag = MAFD
+hitflag = MAF
 guardflag = 
 animtype = heavy
 air.animtype = back
@@ -6545,7 +6545,7 @@ type = Hitdef
 Trigger1 = var(0) = 1
 Trigger1 = animelem = 70
 attr = A, HA
-hitflag = MAFD
+hitflag = MAF
 guardflag = 
 animtype = heavy
 air.animtype = back
@@ -6917,7 +6917,7 @@ x = 10
 type = HitDef
 trigger1 = AnimElem = 6
 attr = S, HA
-hitflag = MAFD
+hitflag = MAF
 guardflag = MA
 priority = 5, Miss
 pausetime = 13,13
@@ -7597,7 +7597,7 @@ type = HitDef
 ;triggerall = P2movetype != H
 trigger1 = AnimElemTime(6) >= 0
 attr = S, HT
-hitflag = MAFD
+hitflag = MAF
 guardflag = MA
 priority = 5, Miss
 pausetime = 13,13
@@ -8450,7 +8450,7 @@ type = Hitdef
 triggerall = var(0) != 1
 trigger1 = AnimElem = 3
 attr = S, HA
-hitflag = MAFD
+hitflag = MAF
 guardflag = MA
 animtype = heavy
 air.animtype = back
@@ -8493,7 +8493,7 @@ type = Hitdef
 triggerall = var(0) = 1
 trigger1 = AnimElem = 3
 attr = S, HA
-hitflag = MAFD
+hitflag = MAF
 guardflag =
 animtype = heavy
 air.animtype = back
@@ -8871,7 +8871,7 @@ type = Hitdef
 Triggerall = var(0) = 1
 Trigger1 = AnimElem = 7
 attr = S, HA
-hitflag = MAFD
+hitflag = MAF
 guardflag = 
 animtype = heavy
 air.animtype = back

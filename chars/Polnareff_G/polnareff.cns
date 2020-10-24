@@ -1872,7 +1872,7 @@ postype = p1
 attr = SCA,HP
 priority = 7,Hit
 affectteam = B
-hitflag = MAFD
+hitflag = MAF
 guardflag = -1
 p1stateno = 0
 

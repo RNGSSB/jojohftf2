@@ -673,7 +673,7 @@ velocity = 0,0
 attr = S, SP
 damage = 0
 animtype = Heavy
-hitflag = MAFD
+hitflag = MAF
 guardflag =
 pausetime = 0,!(var(28)>=10&&random%8=0)*11
 sparkno = S8204
@@ -1188,7 +1188,7 @@ trigger7 = AnimElem = 52
 trigger8 = AnimElem = 64
 trigger9 = AnimElem = 76
 attr = S, SA
-hitflag = MAFD
+hitflag = MAF
 guardflag =
 animtype = heavy
 air.animtype = back
@@ -1247,7 +1247,7 @@ trigger17 = AnimElem = 70
 trigger18 = AnimElem = 73
 trigger19 = AnimElem = 79
 attr = S, SA
-hitflag = MAFD
+hitflag = MAF
 guardflag =
 animtype = heavy
 air.animtype = back
@@ -2127,7 +2127,7 @@ trigger25 = AnimElem = 73
 trigger26 = AnimElem = 76
 trigger27 = AnimElem = 79
 attr = A, SA
-hitflag = MAFD
+hitflag = MAF
 guardflag =
 animtype = heavy
 air.animtype = back
@@ -2512,7 +2512,7 @@ type = Hitdef
 triggerall = var(0) = 1
 trigger1 = AnimElem = 5
 attr = S, SA
-hitflag = MAFD
+hitflag = MAF
 guardflag =
 animtype = heavy
 air.animtype = back
@@ -3142,7 +3142,7 @@ type = Hitdef
 triggerall = var(0) = 1
 trigger1 = AnimElem = 5
 attr = S, SA
-hitflag = MAFD
+hitflag = MAF
 guardflag =
 animtype = heavy
 air.animtype = back
@@ -3603,7 +3603,7 @@ type = Hitdef
 triggerall = var(0) = 1
 trigger1 = AnimElem = 8
 attr = S, SA
-hitflag = MAFD
+hitflag = MAF
 guardflag =
 animtype = heavy
 air.animtype = back
