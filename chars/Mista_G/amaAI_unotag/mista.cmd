@@ -95,8 +95,11 @@ time = 20
 name = "dd"
 command = ~D, >D
 time = 12
-  
- 
+
+[command]
+name = "super1"
+command = ~D, DF, F
+time = 20 
 
 [Command]
 name = "632_X"
@@ -566,7 +569,6 @@ triggerall = NumHelper(1125) = 0
 triggerall = NumHelper(1401) = 0
 triggerall = power >= 1000
 triggerall = var(55) != 4
-
 triggerall = !Ishelper
 triggerall = statetype != A
 triggerall = numhelper(10371)
