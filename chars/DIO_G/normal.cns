@@ -1230,7 +1230,6 @@ air.fall = 1
 fall.recover = 1
 yaccel = .35
 guard.kill = 0
-fall.recovertime = 58
 p2facing = 1
  
 [State 220, 1]
@@ -1238,7 +1237,7 @@ type = Hitdef
 triggerall = var(0) = 1 
 trigger1 = AnimElem = 4
 attr = S, NA
-hitflag = MAFD
+hitflag = MAF
 guardflag =
 animtype = heavy
 air.animtype = back
@@ -1271,7 +1270,6 @@ air.fall = 1
 fall.recover = 1
 yaccel = .35
 guard.kill = 0
-fall.recovertime = 58
 p2facing = 1
  
 
@@ -1888,7 +1886,7 @@ type = Hitdef
 triggerall = var(0) != 1
 trigger1 = AnimElem = 5
 attr = C, NA
-hitflag = MAFD
+hitflag = MAF
 guardflag = LA
 animtype = heavy
 air.animtype = back

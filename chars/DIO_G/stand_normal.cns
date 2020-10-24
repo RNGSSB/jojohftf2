@@ -5759,7 +5759,7 @@ triggerall = var(0) = 1
 trigger1 = prevstateno != [100,105]
 trigger1 = AnimElem = 2
 attr = C, NA
-hitflag = MAFD
+hitflag = MAF
 guardflag =
 animtype = Light
 air.animtype = back
@@ -5799,7 +5799,7 @@ triggerall = var(0) = 1
 trigger1 = prevstateno = [100,105]
 trigger1 = AnimElem = 2
 attr = C, NA
-hitflag = MAFD
+hitflag = MAF
 guardflag =
 animtype = Light
 air.animtype = back

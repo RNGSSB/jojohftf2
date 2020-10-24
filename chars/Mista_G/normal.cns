@@ -810,7 +810,8 @@ airguard.cornerpush.veloff = 0
 down.cornerpush.veloff = 0
 fall = 1
 air.fall = 1
-fall.recover = 0
+fall.recover = 1
+fall.recovertime = 25
 yaccel = .36
 id = 220
 
