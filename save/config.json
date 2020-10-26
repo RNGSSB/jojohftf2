@@ -35,7 +35,9 @@
 	"GameWidth": 1920,
 	"GameHeight": 1080,
 	"GameSpeed": 100,
-	"IP": {},
+	"IP": {
+		"tdanzz": "25.99.25.119"
+	},
 	"LegacyMode": false,
 	"LifebarFontScale": 1,
 	"LifeMul": 100,

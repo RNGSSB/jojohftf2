@@ -2747,8 +2747,8 @@ triggerall = statetype != A
 triggerall = command = "y" && command != "holddown"
 triggerall = !var(8)
 trigger1 = ctrl
-trigger2 = stateno = 200
-value = 210
+trigger2 = stateno = 200&& movecontact
+value = 210 
 
 [State -1, Soff強]
 type = ChangeState
@@ -2758,8 +2758,8 @@ triggerall = statetype != A
 triggerall = command = "z" && command != "holddown"
 triggerall = !var(8)
 trigger1 = ctrl
-trigger2 = 210 
-trigger3 = 200 
+trigger2 = 210 && movecontact
+trigger3 = 200 && movecontact
 value = 220
 
 [State -1, 立ちS]
@@ -2812,6 +2812,7 @@ triggerall = statetype != A
 triggerall = command = "y" && command = "holddown"
 triggerall = !var(8)
 trigger1 = ctrl || ((stateno = 100 || stateno = 105) && time > 1)
+trigger4 = stateno = 400 && movecontact
 value = 410
 
 [State -1, Soff屈中]
@@ -2822,6 +2823,8 @@ triggerall = statetype != A
 triggerall = command = "z" && command = "holddown"
 triggerall = !var(8)
 trigger1 = ctrl || ((stateno = 100 || stateno = 105) && time > 1)
+trigger4 = stateno = 400 && movecontact
+trigger5 = stateno = 410 && movecontact
 value = 420
 
 [State -1, 2S]
@@ -2861,6 +2864,7 @@ triggerall = command = "x" || command = "b"
 triggerall = roundstate = 2
 triggerall = statetype = A
 trigger1 = ctrl
+
 value = 600
 
 [State -1, Soffジャンプ中]
@@ -2870,6 +2874,7 @@ triggerall = command = "y"
 triggerall = roundstate = 2
 triggerall = statetype = A
 trigger1 = ctrl
+trigger2 = stateno = 600 && movecontact
 value = 610
 
 [State -1, Soffジャンプ強]
@@ -2879,6 +2884,8 @@ triggerall = command = "z"
 triggerall = roundstate = 2
 triggerall = statetype = A
 trigger1 = ctrl
+trigger2 = stateno = 600 && movecontact
+trigger3 = stateno = 610 && movecontact
 value = 620
 
 [State -1, ジャンプS]
