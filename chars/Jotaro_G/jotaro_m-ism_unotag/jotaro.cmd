@@ -1700,7 +1700,7 @@ ignorehitpause = 1
 
 
 
-[State -1, Taunt]
+[State -1, Tandem]
 type = ChangeState
 triggerall = !NumPartner || (NumPartner && (sysvar(4) != [8,9]) && (sysvar(4) != 12) && (StateNo != [1251109,1251114])) 
 value = 850
@@ -1719,19 +1719,19 @@ triggerall = Helper(10000),stateno != 10840
 trigger1 = ctrl || stateno = 40 || (stateno = 100 && AnimElemTime(2) >= 1) || stateno = 101 || (stateno = 105 && AnimElemTime(2) >= 1)
 trigger2 = StateNo = 195
 trigger3 = StateNo = 196
-trigger4 = StateNo = 300
-trigger5 = StateNo = 301
-trigger6 = StateNo = 310
-trigger7 = StateNo = 311
-trigger8 = StateNo = 320
-trigger9 = StateNo = 340
-trigger10 = StateNo = 500
-trigger11 = StateNo = 510
+trigger4 = StateNo = 200
+trigger5 = StateNo = 210
+trigger6 = StateNo = 220
+trigger7 = StateNo = 230
+trigger8 = StateNo = 240
+trigger9 = StateNo = 221
+trigger10 = StateNo = 400
+trigger11 = StateNo = 410
 trigger12 = StateNo = 5201
-trigger13 = stateno = 321
-trigger14 = stateno = 341
-trigger15 = stateno = 520
-trigger16 = stateno = 521
+trigger13 = stateno = 411
+trigger14 = stateno = 420
+trigger15 = stateno = 421
+trigger16 = stateno = 430
 trigger17 = stateno = 511
 trigger18 = stateno = 501
 trigger19 = stateno = 330
@@ -1811,7 +1811,7 @@ value = 810
 triggerall = !var(59)
 triggerall = !var(0) || (var(0) = 1 && var(2)) || (var(0) = 3 && var(2))
 triggerall = roundstate = 2
-triggerall = command = "recovery"
+triggerall = command = "recovery" || command = "a"
 triggerall = prevstateno != [810,811]
 trigger1 = stateno = 150 || stateno = 151 || stateno = 152 || stateno = 153
 ignorehitpause = 0

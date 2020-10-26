@@ -135,7 +135,7 @@ victory1 = "Kono Dio Da"
 
 
 [Data]
-life = 900
+life = 1000
 power = 10000
 attack = 100
 defence = 100

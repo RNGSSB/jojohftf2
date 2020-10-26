@@ -181,7 +181,7 @@ jump.back = -3.18
 jump.fwd = 3.42
 runjump.back = -4.5,-11
 runjump.fwd = 4.5,-11
-airjump.neu = 0,-5.4
+airjump.neu = 0,-83.4
 airjump.back = -2.8
 airjump.fwd = 2.8
 

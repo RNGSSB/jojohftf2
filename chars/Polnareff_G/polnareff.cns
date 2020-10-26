@@ -121,21 +121,21 @@ walk.fwd     = 2.8           ;前進速度（Ｘ軸・[Statedef 20]に適用さ�
 walk.back    = -2.6        ;後退速度（Ｘ軸・[Statedef 20]に適用される）
 run.fwd      = 9,0         ;前方に走る速度（Ｘ軸,Ｙ軸・[Statedef 100]に適用される）
 run.back     = -9,0        ;後方に走る速度（Ｘ軸,Ｙ軸・[Statedef 105]に適用される）
-jump.neu = 0,-12.0	　 ;垂直ジャンプの速度（Ｘ軸・[Statedef 40]に適用される）
+jump.neu = 0,-11.8	　 ;垂直ジャンプの速度（Ｘ軸・[Statedef 40]に適用される）
 jump.back = -2.5	   ;後方ジャンプの速度（Ｘ軸・[Statedef 40]に適用される）
 jump.fwd = 3.33		　 ;前方ジャンプの速度（Ｘ軸・[Statedef 40]に適用される）
 runjump.back = -4.5,-11	   ;後方に走ってからのジャンプ速度（Ｘ軸,Ｙ軸・[Statedef 40]に適用される） 
 runjump.fwd = 4.5,-11	   ;前方に走ってからのジャンプ速度（Ｘ軸,Ｙ軸・[Statedef 40]に適用される）
-airjump.neu  = 0,-8        ;空中垂直ジャンプ速度（Ｘ軸,Ｙ軸・[Statedef 45]に適用される）
-airjump.back = -2.5        ;空中後方ジャンプ速度（Ｘ軸・[Statedef 45]に適用される）
-airjump.fwd  = 2.5        ;空中前方ジャンプ速度（Ｘ軸・[Statedef 45]に適用される）
+airjump.neu = 0,-5.4
+airjump.back = -2.8
+airjump.fwd = 2.8      ;空中前方ジャンプ速度（Ｘ軸・[Statedef 45]に適用される）
 
 ;---------------------------------------------------------------------------
 ; 運動関係
 ;---------------------------------------------------------------------------
 [Movement]
 airjump.num     = 0        ;空中ジャンプが出来る回数
-airjump.height  = 35       ;空中ジャンプが出来る最低の高度（Ｙ軸）
+airjump.height  = 28       ;空中ジャンプが出来る最低の高度（Ｙ軸）
 yaccel          = .6       ;Ｙ軸加速度（重力）
 stand.friction  = .85      ;立っている時の摩擦係数（ステートのPhysicsが「S」の時）
 crouch.friction = .82      ;しゃがんでいる時の摩擦係数（ステートのPhysicsが「C」の時）

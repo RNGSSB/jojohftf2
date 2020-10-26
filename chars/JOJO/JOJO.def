@@ -1,0 +1,41 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name ="Joseph Joestar"
+displayname ="Young Joseph"       ;JOJO      ;Proud Lineage Joseph
+versiondate =04,14,2002
+mugenversion =04,14,2002
+author ="Nimame"             ;edited by JohnVyttalRay, Iver Stone and Bi Han
+pal.defaults =1,2,3,4,5
+
+[Files]
+sprite =JOJO.sff
+anim =JOJO.air
+sound =JOJO.snd
+cmd =JOJO.cmd
+cns =JOJO.cns
+stcommon =JOJO.common.cns
+st =JOJO.cns
+pal1=act\Anime.act
+pal2=act\JOJO3.act
+pal3=act\JOJO4.act
+pal4=act\JOJO2.act
+pal5=act\JOJO1.act
+pal6=act\Manga.act
+pal7=act\Old Joseph.act
+pal8=act\Jonathan.act
+pal9=act\JOJO6.act
+pal10=act\JOJO7.act
+pal11=act\JOJO8.act
+pal12=act\JOJO9.act
+st1=-2,-3.cns
+st2=config.txt
+
+[Arcade]
+intro.storyboard=
+ending.storyboard=
+;intro.storyboard = 
+;ending.storyboard = 

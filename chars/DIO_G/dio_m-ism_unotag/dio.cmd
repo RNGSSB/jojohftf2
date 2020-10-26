@@ -532,28 +532,27 @@ time = 12
 
 [Command]
 name = "Guard Cancel"
-command = ~B,DB,$D,x
-time = 10
-buffer.time = 3
+command = ~F,D,DF,x
+time = 13
+
  
 [Command]
 name = "Guard Cancel"
-command = ~B,DB,$D,y
-time = 10
-buffer.time = 3
+command = ~F,D,DF,x
+time = 13
+
  
 [Command]
 name = "Guard Cancel"
-command = ~B,DB,$D,z
-time = 10
-buffer.time = 3
+command = ~F,D,DF,x
+time = 13
 
 [Command]
 name = "KuretsuGanshiha" 
-
 command = ~F, z,y,x, F
 time = 16
 buffer.time = 3
+
 [Command]
 name = "KuretsuGanshiha" 
 command = ~F, z,y,x, F
@@ -1177,18 +1176,6 @@ triggerall = numhelper(10000)
 triggerall = helper(10000),stateno != 10840
 Trigger1 = ctrl || stateno = 40 || (stateno = 100 && time >= 4) || stateno = 101 || (stateno = 105 && time >= 4)
 Trigger2 = StateNo = [195,197]
-Trigger3 = StateNo = 300
-Trigger4 = StateNo = 301
-Trigger5 = StateNo = 310
-Trigger6 = StateNo = 311 || StateNo = 312 && AnimElemtime(5) > 0
-Trigger7 = StateNo = 320 || StateNo = 321 
-Trigger8 = StateNo = 330
-Trigger9 = StateNo = 500
-Trigger10 = StateNo = 501
-Trigger11 = StateNo = 510
-Trigger12 = StateNo = 511
-Trigger13 = StateNo = 520
-Trigger14 = StateNo = 521
 Trigger15 = stateno = 1050
 Trigger16 = StateNo = 1151 && animelemtime(7) > 0
 trigger16 = numtarget
@@ -1215,9 +1202,6 @@ triggerall = numhelper(10000)
 triggerall = helper(10000),stateno != 10840
 trigger1 = ctrl
 trigger2 = stateno = 10825
-trigger3 = StateNo = 700
-trigger4 = StateNo = 710
-trigger5 = StateNo = 720
 trigger6 = stateno = 1060
 ignorehitpause = 0
 
@@ -1626,18 +1610,6 @@ trigger5 = StateNo = 220
 trigger6 = StateNo = 400
 trigger7 = StateNo = 410
 trigger8 = StateNo = 420
-trigger9 = StateNo = 300
-trigger10 = StateNo = 301
-trigger11 = StateNo = 310 && prevstateno != [100,105]
-trigger12 = StateNo = 311
-trigger13 = StateNo = 320 && prevstateno != [100,105]
-trigger14 = StateNo = 330
-trigger15 = StateNo = 500
-trigger16 = StateNo = 501
-trigger17 = StateNo = 510
-trigger18 = StateNo = 511
-trigger19 = StateNo = 520 && prevstateno = [100,105]
-trigger20 = StateNo = 521
 trigger21 = StateNo = 5201
 trigger22 = StateNo = 1150 && prevstateno != 840 && animelemtime(5) > 0
 ignorehitpause = 0
@@ -2019,7 +1991,6 @@ trigger1 = ctrl
 trigger1 = statetype = A
 trigger2 = stateno = 40 && time > 0
 trigger3 = stateno = 835
-trigger4 = stateno = 600 && time >= 6
 ignorehitpause = 0
 
 
@@ -2037,7 +2008,6 @@ trigger1 = ctrl
 trigger1 = statetype = A
 trigger2 = stateno = 40 && time > 0
 trigger3 = stateno = 835
-trigger4 = stateno = 600 && time >= 6
 ignorehitpause = 0
 
 
