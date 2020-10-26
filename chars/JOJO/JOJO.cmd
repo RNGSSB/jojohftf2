@@ -344,22 +344,17 @@ time = 16
 
 [Command]
 name = "This is war!"
-command = ~F,D,DF,x+y
+command = ~F,DF,D,DB,B,x+y
 time = 16
 
 [Command]
 name = "This is war!"
-command = ~F,D,DF,y+z
+command = ~F,DF,D,DB,B,z+y
 time = 16
 
 [Command]
 name = "This is war!"
-command = ~F,D,DF,x+z
-time = 16
-
-[Command]
-name = "This is war!"
-command = ~F,D,DF,b
+command = ~F,DF,D,DB,B,x+z
 time = 16
 
 [Command]
@@ -2672,6 +2667,8 @@ triggerall = statetype != A
 triggerall = command = "y" && command = "holdfwd" && command = "holddown"
 triggerall = !var(8)
 trigger1 = ctrl
+trigger2 = stateno = 400
+trigger2 = stateno = 410
 value = 415
 
 [State -1, Soff3強]
@@ -2682,6 +2679,10 @@ triggerall = statetype != A
 triggerall = command = "z" && command = "holdfwd" && command = "holddown"
 triggerall = !var(8)
 trigger1 = ctrl
+trigger2 = stateno = 420
+trigger3 = stateno = 415
+trigger3 = stateno = 410
+trigger3 = stateno = 400
 value = 425
 
 [State -1, 6S]
@@ -2874,7 +2875,6 @@ triggerall = command = "y"
 triggerall = roundstate = 2
 triggerall = statetype = A
 trigger1 = ctrl
-trigger2 = stateno = 600 && movecontact
 value = 610
 
 [State -1, Soffジャンプ強]
@@ -2884,8 +2884,6 @@ triggerall = command = "z"
 triggerall = roundstate = 2
 triggerall = statetype = A
 trigger1 = ctrl
-trigger2 = stateno = 600 && movecontact
-trigger3 = stateno = 610 && movecontact
 value = 620
 
 [State -1, ジャンプS]
@@ -2907,7 +2905,7 @@ value=1900
 triggerall=!var(59)
 triggerall=command="c"
 triggerall=statetype!=a
-triggerall = power < 10000
+triggerall = power < 0
 trigger1=ctrl
 trigger2=stateno=[195,299]
 trigger3=stateno=[400,499]
