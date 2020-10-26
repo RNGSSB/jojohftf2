@@ -1174,7 +1174,7 @@ triggerall = statetype != A
 trigger1 = ctrl || (stateno = 100 && time >= 4) || stateno = 101 || (stateno = 105 && time >= 4)
 trigger2 = stateno = 1052 && time >= 10
 trigger3 = stateno = 1053 && time >= 10
-trigger4 = stateno = 200
+trigger4 = stateno = 200 && movecontact
 ignorehitpause = 0
 
 ;---------------------------------------------------------------------------
@@ -1192,6 +1192,8 @@ triggerall = statetype != A
 trigger1 = ctrl || (stateno = 100 && time >= 4) || stateno = 101 || (stateno = 105 && time >= 4)
 trigger2 = stateno = 1052 && time >= 10
 trigger3 = stateno = 1053 && time >= 10
+trigger4 = stateno = 200 && movecontact
+trigger5 = stateno = 210 && movecontact
 ignorehitpause = 0
 
 ;---------------------------------------------------------------------------
@@ -1228,6 +1230,7 @@ triggerall = statetype != A
 trigger1 = ctrl || (stateno = 100 && time >= 4) || stateno = 101 || (stateno = 105 && time >= 4)
 trigger2 = stateno = 1052 && time >= 10
 trigger3 = stateno = 1053 && time >= 10
+trigger4 = stateno = 400 && movecontact
 ignorehitpause = 0
 
 ;---------------------------------------------------------------------------
@@ -1245,6 +1248,8 @@ triggerall = statetype != A
 trigger1 = ctrl || (stateno = 100 && time >= 4) || stateno = 101 || (stateno = 105 && time >= 4)
 trigger2 = stateno = 1052 && time >= 10
 trigger3 = stateno = 1053 && time >= 10
+trigger4 = stateno = 400 && movecontact
+trigger5 = stateno = 410 && movecontact
 ignorehitpause = 0
 
 ;---------------------------------------------------------------------------
@@ -1277,6 +1282,7 @@ trigger1 = statetype = A
 trigger2 = stateno = 40 && time > 0
 trigger3 = statetype = A
 trigger3 = stateno = 1051 && time >= 10
+trigger4 = stateno = 600 && movecontact
 ignorehitpause = 0
 
 ;---------------------------------------------------------------------------
@@ -1293,6 +1299,8 @@ trigger1 = statetype = A
 trigger2 = stateno = 40 && time > 0
 trigger3 = statetype = A
 trigger3 = stateno = 1051 && time >= 10
+trigger4 = stateno = 600 && movecontact
+trigger5 = stateno = 610 && movecontact
 ignorehitpause = 0
 
 ;---------------------------------------------------------------------------
