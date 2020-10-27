@@ -2658,7 +2658,7 @@ type = ChangeState
 TriggerAll = !var(59)
 triggerall = roundstate = 2
 triggerall = statetype != A
-triggerall = command = "z" && command != "holddown" && (command = "holdfwd" || command = "holdback")
+triggerall = command = "c" 
 triggerall = p2bodydist x = [-23,23]
 triggerall = p2statetype != A && p2statetype != L && p2movetype != H
 triggerall = !((prevstateno = [100,105]) && time < 8)
