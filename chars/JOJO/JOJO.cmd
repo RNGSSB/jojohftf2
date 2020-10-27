@@ -2486,7 +2486,7 @@ type = ChangeState
 TriggerAll = !var(59)
 triggerall = roundstate = 2
 triggerall = statetype != A
-triggerall = command = "63214a" || (var(36)&2**10)
+triggerall = command = "214s" || (var(36)&2**10)
 triggerall = !var(8)
 trigger1 = ctrl || ((stateno = 100 || stateno = 105) && time > 1) || stateno = 40
 trigger2 = stateno = 200
