@@ -1114,9 +1114,7 @@ triggerall = numhelper(10371)
 triggerall = (helper(10371),var(1) = [1,3]) 
 trigger1 = statetype = A
 trigger1 = ctrl
-trigger1 = ctrl
-trigger2 = stateno = 600
-trigger2 = movecontact
+
 
 [State -1, ƒWƒƒƒ“ƒv‹­]
 type = ChangeState
@@ -1127,8 +1125,6 @@ triggerall = numhelper(10371)
 triggerall = (helper(10371),var(2) = [1,3]) 
 trigger1 = statetype = A
 trigger1 = ctrl
-trigger2 = stateno = 600 || stateno = 610
-trigger2 = movecontact
 
 
 [State -1, AI Command]

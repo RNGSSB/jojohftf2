@@ -6012,7 +6012,7 @@ trigger1 = !numtarget
 trigger1 = anim = 9999
 
 ;===========================================================================
-;クラッカーブーメラン
+;Clacker Boomerang
 [Statedef 1300]
 type = S
 movetype = A

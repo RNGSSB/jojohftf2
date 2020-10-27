@@ -2486,7 +2486,7 @@ type = ChangeState
 TriggerAll = !var(59)
 triggerall = roundstate = 2
 triggerall = statetype != A
-triggerall = command = "214s" || (var(36)&2**10)
+triggerall = command = "63214a" || (var(36)&2**10)
 triggerall = !var(8)
 trigger1 = ctrl || ((stateno = 100 || stateno = 105) && time > 1) || stateno = 40
 trigger2 = stateno = 200
@@ -2809,8 +2809,7 @@ triggerall = roundstate = 2
 triggerall = statetype != A
 triggerall = command = "y" && command = "holddown"
 triggerall = !var(8)
-trigger1 = ctrl || ((stateno = 100 || stateno = 105) && time > 1)
-trigger4 = stateno = 400 && movecontact
+trigger1 = ctrl || ((stateno = 100 || stateno = 105) && time > 1) || stateno = 400 && movecontact
 value = 410
 
 [State -1, Soff屈中]
@@ -2820,9 +2819,7 @@ triggerall = roundstate = 2
 triggerall = statetype != A
 triggerall = command = "z" && command = "holddown"
 triggerall = !var(8)
-trigger1 = ctrl || ((stateno = 100 || stateno = 105) && time > 1)
-trigger4 = stateno = 400 && movecontact
-trigger5 = stateno = 410 && movecontact
+trigger1 = ctrl || ((stateno = 100 || stateno = 105) && time > 1) || stateno = 400 && movecontact || stateno = 410 && movecontact
 value = 420
 
 [State -1, 2S]
