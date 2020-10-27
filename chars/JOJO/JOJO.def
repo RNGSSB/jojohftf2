@@ -5,7 +5,7 @@
 
 [Info]
 name ="Joseph Joestar"
-displayname ="Young Joseph"       ;JOJO      ;Proud Lineage Joseph
+displayname ="Joseph Joestar"       ;JOJO      ;Proud Lineage Joseph
 versiondate =04,14,2002
 mugenversion =04,14,2002
 author ="Nimame"             ;edited by JohnVyttalRay, Iver Stone and Bi Han
@@ -33,6 +33,7 @@ pal11=act\JOJO8.act
 pal12=act\JOJO9.act
 st1=-2,-3.cns
 st2=config.txt
+movelist = movelist.dat     ;Ikemen feature: Movelist
 
 [Arcade]
 intro.storyboard=

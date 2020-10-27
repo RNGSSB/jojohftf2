@@ -337,6 +337,12 @@ name = "214aa"
 command = ~D,DB,B,y+z
 time = 16
 
+
+[Command]
+name = "214s"
+command = ~D,DB,B,a
+time = 16
+
 [Command]
 name = "214aa"
 command = ~D,DB,B,x+z
@@ -2408,7 +2414,7 @@ value = 3100
 ; 必殺技
 ;==============================================================================
 ;------------------------------------------------------------------------------
-;波紋コーラー
+;Soda ---------------------
 [State -1, 1000]
 type = ChangeState
 TriggerAll = !var(59)
@@ -2480,7 +2486,7 @@ type = ChangeState
 TriggerAll = !var(59)
 triggerall = roundstate = 2
 triggerall = statetype != A
-triggerall = command = "63214a" || (var(36)&2**10)
+triggerall = command = "214s" || (var(36)&2**10)
 triggerall = !var(8)
 trigger1 = ctrl || ((stateno = 100 || stateno = 105) && time > 1) || stateno = 40
 trigger2 = stateno = 200
