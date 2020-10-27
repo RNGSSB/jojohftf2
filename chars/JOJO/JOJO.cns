@@ -1677,14 +1677,13 @@ var(58) = 1
 type = velset
 trigger1 = !time
 trigger1 = vel x != 0
-;trigger1 = prevstateno != [100,105]
-trigger2 = anim = 211 && animelemtime(5) = 0
+trigger2 = animelemtime(4) = 0
 x = 0
 
 [State 0, vel]
 type = velset
 trigger1 = prevstateno = [100,105]
-trigger1 = animelemtime(4) = 0
+trigger1 = animelemtime(3) = 0
 x = 5
 persistent = 0
 
@@ -1692,7 +1691,7 @@ persistent = 0
 type = velmul
 triggerall = !var(8)
 trigger1 = prevstateno = [100,105]
-trigger1 = var(58) >= 18
+trigger1 = var(58) >= 16
 x = .9
 
 [State 0, snd]
@@ -1984,10 +1983,10 @@ hitsound = s0,3
 guardsound = s0,9
 getpower = 60,0
 givepower = 30,0
-ground.type = high
+ground.type = trip
 ground.slidetime = 18
 ground.hittime = 18
-ground.velocity = -10
+ground.velocity = -3,-4*(1.0-ifelse(var(40)>0,var(40)*.125,0))*(var(40)<=7)
 guard.velocity = -8
 air.type = high
 air.velocity = -1,-6*(1.0-ifelse(var(40)>0,var(40)*.125,0))*(var(40)<=7)

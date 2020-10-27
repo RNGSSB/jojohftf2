@@ -2716,20 +2716,11 @@ type = ChangeState
 TriggerAll = !var(59)
 triggerall = roundstate = 2
 triggerall = statetype != A
-triggerall = command = "z" && (command = "holdfwd" || stateno = 105) && command != "holddown"
+triggerall = command = "z" && (command = "holdfwd" || command = "holdback") && command != "holddown"
 triggerall = !var(8)
 trigger1 = ctrl || ((stateno = 100 || stateno = 105) && time > 1)
 value = 225
 
-[State -1, 6強その2]
-type = ChangeState
-TriggerAll = !var(59)
-triggerall = roundstate = 2
-triggerall = statetype != A
-triggerall = (command = "x" || command = "y" || command = "z") && command != "holddown"
-triggerall = !var(8)
-trigger1 = ((stateno = 100 || stateno = 105) && time > 1)
-value = 225
 
 ;==============================================================================
 ; 通常攻撃技
@@ -2741,7 +2732,7 @@ triggerall = roundstate = 2
 triggerall = statetype != A
 triggerall = (command = "x" || (command = "b" && var(56)>0)) && command != "holddown"
 triggerall = !var(8)
-trigger1 = ctrl
+trigger1 = ctrl || (stateno = 100 && AnimElemTime(2) >= 1) || stateno = 101 || (stateno = 105 && AnimElemTime(2) >= 1)
 trigger2 = StateNo = 200 && (prevstateno != [100,105]) && animelemtime(5) >= 0
 trigger3 = StateNo = 400 && (prevstateno != [100,105]) && animelemtime(5) >= 0
 value = 200
@@ -2753,7 +2744,7 @@ triggerall = roundstate = 2
 triggerall = statetype != A
 triggerall = command = "y" && command != "holddown"
 triggerall = !var(8)
-trigger1 = ctrl
+trigger1 = ctrl || (stateno = 100 && AnimElemTime(2) >= 1) || stateno = 101 || (stateno = 105 && AnimElemTime(2) >= 1)
 trigger2 = stateno = 200&& movecontact
 value = 210 
 
@@ -2764,7 +2755,7 @@ triggerall = roundstate = 2
 triggerall = statetype != A
 triggerall = command = "z" && command != "holddown"
 triggerall = !var(8)
-trigger1 = ctrl
+trigger1 = ctrl || (stateno = 100 && AnimElemTime(2) >= 1) || stateno = 101 || (stateno = 105 && AnimElemTime(2) >= 1)
 trigger2 = 210 && movecontact
 trigger3 = 200 && movecontact
 value = 220
