@@ -23,7 +23,7 @@ stcommon=common1.cns
 sprite=jotaro.sff
 anim=jotaro.air
 sound=jotaro.snd
-pal1=act002.act
+pal1=realjotaro.act
 movelist = movelist.dat     ;Ikemen feature: Movelist
 
 
