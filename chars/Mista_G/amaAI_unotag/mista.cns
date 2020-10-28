@@ -10,10 +10,10 @@
 
 
 [Data]
-life              = 960
+life              = 1000
 power             = 10000
-attack            = 100
-defence           = 100
+attack            = 80
+defence           = 86
 fall.defence_up   = 0
 liedown.time      = 36
 airjuggle         = 15
@@ -589,22 +589,6 @@ type = VarSet
 triggerall = command != "holdup"
 trigger1 = command = "dd"
 var(24) = 11
-
- 
- 
-[State 10371, QCF Init]
-type = VarSet
-triggerall = command != "holddown"
-trigger1 = p2dist X >= 0 && command = "qcfx2" && command != "holdback"
-trigger2 = p2dist X < 0 && command = "qcbx2" && command != "holdfwd"
-var(40) = 19
-
-[State 10371, QCB Init]
-type = VarSet
-triggerall = command != "holddown"
-trigger1 = p2dist X >= 0 && command = "qcbx2" && command != "holdfwd"
-trigger2 = p2dist X < 0 && command = "qcfx2" && command != "holdback"
-var(41) = 19
 
 [State 10371, QCF Init]
 type = VarSet

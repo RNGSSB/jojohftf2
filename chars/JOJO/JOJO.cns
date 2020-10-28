@@ -3926,7 +3926,7 @@ ground.velocity = -6
 guard.velocity = -5.5
 air.type = High
 air.velocity = -2,-4*(1.0-ifelse(var(40)>0,var(40)*.125,0))*(var(40)<=7)
-air.hittime = 12
+air.hittime = 20
 fall = 0
 air.fall = 0
 yaccel = .36
