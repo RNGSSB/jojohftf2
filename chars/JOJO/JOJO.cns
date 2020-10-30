@@ -1521,27 +1521,23 @@ type = VarAdd
 trigger1 = !var(8)
 var(58) = 1
 
-[State 0, vel]
-type = velset
-trigger1 = !time
-trigger1 = vel x != 0
-trigger2 = animelemtime(4) = 0
+[State 1100, Velocity]
+type = VelSet
+triggerall = prevstateno != [100,105]
+trigger1 = Time = 0
 x = 0
 
-[State 0, vel]
-type = velset
-trigger1 = prevstateno = [100,105]
-trigger1 = animelemtime(3) = 0
-x = 5
-persistent = 0
+[State 1100, Velocity]
+type = VelSet
+trigger1 = Time = 0
+y = 0
 
-[State 0, vel]
-type = velmul
-triggerall = !var(8)
-trigger1 = prevstateno = [100,105]
-trigger1 = var(58) >= 16
-x = .9
-
+[State 1100, Velocity]
+type = VelMul
+triggerall = var(0) != -1
+triggerall = var(0) != 2
+trigger1 = !var(24)
+x = .95
 [State 0, snd]
 type = playsnd
 trigger1 = !var(8)
@@ -1673,27 +1669,24 @@ type = VarAdd
 trigger1 = !var(8)
 var(58) = 1
 
-[State 0, vel]
-type = velset
-trigger1 = !time
-trigger1 = vel x != 0
-trigger2 = animelemtime(4) = 0
+[State 1100, Velocity]
+type = VelSet
+trigger1 = prevstateno != [100,105]
+trigger1 = Time = 0
+trigger2 = AnimElem = 8
 x = 0
 
-[State 0, vel]
-type = velset
-trigger1 = prevstateno = [100,105]
-trigger1 = animelemtime(3) = 0
-x = 5
-persistent = 0
+[State 1100, Velocity]
+type = VelSet
+trigger1 = Time = 0
+y = 0
 
-[State 0, vel]
-type = velmul
-triggerall = !var(8)
-trigger1 = prevstateno = [100,105]
-trigger1 = var(58) >= 16
-x = .9
-
+[State 1100, Velocity]
+type = VelMul
+triggerall = var(0) != -1
+triggerall = var(0) != 2
+trigger1 = !var(24)
+x = .95
 [State 0, snd]
 type = playsnd
 trigger1 = !time
@@ -3409,24 +3402,24 @@ type = VarAdd
 trigger1 = !var(8)
 var(58) = 1
 
-[State 0, vel]
-type = velset
-trigger1 = !time
-trigger1 = vel x != 0
-trigger2 = animelemtime(6) = 0
+[State 1100, Velocity]
+type = VelSet
+trigger1 = prevstateno != [100,105]
+trigger1 = Time = 0
+trigger2 = AnimElem = 8
 x = 0
 
-[State 0, vel]
-type = velset
-trigger1 = animelemtime(5) = 0
-x = 8
-persistent = 0
+[State 1100, Velocity]
+type = VelSet
+trigger1 = Time = 0
+y = 0
 
-[State 0, vel]
-type = velmul
-triggerall = !var(8)
-trigger1 = var(58) >= 9
-x = .9
+[State 1100, Velocity]
+type = VelMul
+triggerall = var(0) != -1
+triggerall = var(0) != 2
+trigger1 = !var(24)
+x = .95
 
 [State 0, snd]
 type = playsnd
@@ -4161,7 +4154,7 @@ value = 52
 ;===========================================================================
 ; 投げ技
 ;===========================================================================
-;掴み
+;Throw
 [Statedef 800]
 type    = S
 movetype= A
@@ -4169,7 +4162,7 @@ physics = S
 juggle  = 0
 velset = 0,0
 ctrl = 0
-anim = 800+var(0)
+anim = 800+var(4)
 
 [State 0, hit]
 type = hitdef
@@ -4183,7 +4176,7 @@ sparkno = -1
 hitsound = s0,10
 ;p1stateno = 810
 p2stateno = 820
-p1facing = ifelse(command = "holdfwd", 1, -1)
+p1facing = ifelse(command = "holdback", -1, 1)
 p2facing = 1
 fall = 1
 id = 800
@@ -4195,10 +4188,7 @@ trigger1 = target,stateno = 820
 value = 810
 persistent = 0
 
-[State 0, end]
-type = changestate
-trigger1 = !animtime
-value = 225
+
 
 ;---------------------------------------------------------------------------
 ;成功
@@ -6118,6 +6108,7 @@ removetime = 18
 scale = .833,1.07
 removeongethit = 1
 
+
 [State 0, explod]
 type = helper
 trigger1 = animelemtime(13) = 0
@@ -6125,7 +6116,7 @@ stateno = 1310
 id = 1310
 facing = 1
 postype = p1
-pos = 40,-80
+pos = 30,-90
 ownpal = 1
 size.ground.back = 0
 size.ground.front = 0
@@ -6133,8 +6124,31 @@ size.ground.front = 0
 [State 0, explod]
 type = helper
 trigger1 = animelemtime(13) = 0
-stateno = 1315
-id = 1315
+stateno = 1310
+id = 1310
+facing = 1
+postype = p1
+pos = 30,-90
+ownpal = 1
+size.ground.back = 0
+size.ground.front = 0
+[State 0, explod]
+type = helper
+trigger1 = animelemtime(13) = 0
+stateno = 1310
+id = 1310
+facing = 1
+postype = p1
+pos = 30,-90
+ownpal = 1
+size.ground.back = 0
+size.ground.front = 0
+
+[State 0, explod]
+type = helper
+trigger1 = animelemtime(13) = 0
+stateno = 1310
+id = 1310
 facing = 1
 postype = p1
 pos = 30,-90
@@ -6149,7 +6163,7 @@ value = 0
 ctrl = 1
 
 ;---------------------------------------------------------------------------
-;クラッカーブーメラン(ヘルパー)
+;Clacker Projectile
 [Statedef 1310]
 type = A
 movetype = A
@@ -6191,6 +6205,7 @@ type = hitdef
 trigger1 = 1
 attr = S, SP
 damage = ceil(ifelse((42*root,fvar(0))<7,7,(42*root,fvar(0)))),ceil(ifelse((42*root,fvar(0)*.25)<7,7,(42*root,fvar(0)*.25)))
+;damage = 10000
 priority = 5,Hit
 hitflag = MAF
 guardflag = MA
@@ -6354,157 +6369,6 @@ persistent = 0
 type = velset
 trigger1 = var(0) = 1
 x = 7.5
-
-;---------------------------------------------------------------------------
-;クラッカーブーメラン(ヘルパー)その２
-[Statedef 1315]
-type = A
-movetype = A
-physics = N
-ctrl = 0
-velset = 7,0
-sprpriority = 1
-anim = 11310
-
-[State 0, assert]
-type = assertspecial
-trigger1 = 1
-flag = noshadow
-ignorehitpause = 1
-
-[State 0, explod]
-type = explod
-trigger1 = !time
-anim = 6315
-id = 6310
-facing = 1
-postype = p1
-pos = 0,0
-sprpriority = 2
-ownpal = 1
-bindtime = -1
-removetime = -1
-scale = .833,1.07
-removeongethit = 1
-
-[State 0, hit]
-type = hitdef
-trigger1 = 1
-attr = S, SP
-damage = ceil(ifelse((42*root,fvar(0))<7,7,(42*root,fvar(0)))),ceil(ifelse((42*root,fvar(0)*.25)<7,7,(42*root,fvar(0)*.25)))
-priority = 5,Hit
-hitflag = MAF
-guardflag = MA
-animtype = medium
-air.animtype = Back
-fall.animtype = Back
-pausetime = 0,9
-sparkno = s6004
-sparkxy = 0,0
-guard.sparkno = s6010
-hitsound = s0,5
-guardsound = s0,9
-getpower = 0,0
-givepower = 20,0
-ground.type = low
-ground.slidetime = 18
-ground.hittime = 18
-ground.velocity = -8
-guard.velocity = -8
-air.velocity = -3,-4*(1.0-ifelse(root,var(40)>0,root,var(40)*.125,0))*(root,var(40)<=7)
-airguard.velocity = -3,-4
-air.type = low
-air.hittime = 12
-fall = 0
-air.fall = 1
-fall.recovertime = 22
-guard.kill = 0
-yaccel = .36
-palfx.color = 60
-palfx.time = 40
-palfx.sinadd = 120,120,120,3
-
-[state -2, var]
-type = poweradd
-trigger1 = movehit = 1
-value = 40
-
-[State 0, vel]
-type = parentvaradd
-trigger1 = movehit = 1
-var(40) = 1
-ignorehitpause = 1
-
-[State -2, CornerPush]
-type = ParentVarSet
-trigger1 = IsHelper
-trigger1 = movecontact = 1
-trigger1 = time > 1
-fvar(3) = 0
-ignorehitpause = 1
-
-[state 11250]
-type = helper
-triggerall = numtarget
-trigger1 = movehit=1 && !numhelper(9020)
-id = 9020
-stateno=9020
-pos = 0,0
-postype = p2
-ignorehitpause=1
-
-[State 10000, HitBy]
-type = HitBy
-trigger1 = 1
-value = SCA, NP, SP, HP
-
-[State 10000, PlayerPush]
-type = PlayerPush
-trigger1 = 1
-value = 0
-
-[State 10000, HitOverRide] 
-type = HitOverRide
-trigger1 = 1
-slot = 0
-stateno = 1355
-attr = SCA, NP, SP, HP
-time = -1
-
-[State 0, end]
-type = varset
-trigger1 = var(0)
-fvar(0) = pos x
-persistent = 0
-
-[State 0, end]
-type = posset
-trigger1 = var(0)
-x = fvar(0)
-
-[State 0, end]
-type = varadd
-trigger1 = frontedgedist <= 0
-var(0) = 91
-persistent = 0
-
-[State 0, end]
-type = varadd
-trigger1 = var(0)
-var(0) = -1
-
-[State 10000, HitOverRide] 
-type = changestate
-trigger1 = root,movetype = H && !(root,stateno = [120,160])
-trigger2 = (root,stateno = [800,810])
-trigger3 = (root,stateno = [3000,3010])
-value = 1356
-
-[State 10000, HitOverRide] 
-type = changestate
-trigger1 = var(0) = 1
-trigger2 = movecontact
-value = 1350
 
 ;---------------------------------------------------------------------------
 ;終了
