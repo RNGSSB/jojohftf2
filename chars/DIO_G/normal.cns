@@ -1194,7 +1194,7 @@ movetype = I
 
 [State 220, 1]
 type = Hitdef
-triggerall = var(0) != 1 
+triggerall = var(0) != 1 && prevstateno != [100,105] 
 trigger1 = AnimElem = 4
 attr = S, NA
 hitflag = MAF
@@ -1234,7 +1234,7 @@ p2facing = 1
  
 [State 220, 1]
 type = Hitdef
-triggerall = var(0) = 1 
+triggerall = var(0) = 1 && prevstateno != [100,105] 
 trigger1 = AnimElem = 4
 attr = S, NA
 hitflag = MAF
@@ -1267,6 +1267,46 @@ givepower = 0,0
 persistent = 0
 fall = 1
 air.fall = 1
+fall.recover = 1
+yaccel = .35
+guard.kill = 0
+p2facing = 1
+
+[State 220, 1]
+type = Hitdef
+triggerall = prevstateno = [100,105]
+trigger1 = AnimElem = 4
+attr = S, NA
+hitflag = MAF
+guardflag = MA
+animtype = heavy
+air.animtype = back
+fall.animtype = back
+priority = 5,Hit
+damage = 0
+pausetime = 0,!(var(28)>=10&&random%8=0)*15
+guard.pausetime = 0,!(var(28)>=10&&random%8=0)*15
+sparkno = S8202
+guard.sparkno = S8100
+sparkxy = -20, -61
+hitsound = S1,2
+guardsound = S4,0
+ground.type = low
+air.type = low
+ground.slidetime = 17
+ground.hittime = 17
+air.hittime = 17
+guard.ctrltime = 14
+ground.velocity = -8.5
+guard.velocity = -8
+air.velocity = ifelse(-3.5*.9**((var(42)-1)+!var(42))>-.7,-.7,-3.5*.9**((var(42)-1)+!var(42))), ifelse((-7.5+(1.5*((var(42)-1)+!var(42))))>0,0,(-7.5+(1.5*((var(42)-1)+!var(42)))))
+ground.cornerpush.veloff = 0
+air.cornerpush.veloff = 0
+getpower = 0,0
+givepower = 0,0
+persistent = 0
+fall = 0
+air.fall = 0
 fall.recover = 1
 yaccel = .35
 guard.kill = 0

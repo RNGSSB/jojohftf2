@@ -108,39 +108,39 @@
 		{
 			"Joystick": -1,
 			"Buttons": [
-				"w",
-				"s",
+				"UP",
+				"DOWN",
+				"LEFT",
+				"RIGHT",
+				"z",
+				"x",
+				"c",
 				"a",
+				"s",
 				"d",
-				"y",
-				"u",
-				"i",
-				"h",
-				"j",
-				"k",
 				"RETURN",
-				"1",
-				"2",
-				"3"
+				"q",
+				"w",
+				"Not used"
 			]
 		},
 		{
 			"Joystick": -1,
 			"Buttons": [
-				"UP",
-				"DOWN",
-				"LEFT",
-				"RIGHT",
-				"KP_7",
-				"KP_8",
-				"KP_9",
-				"KP_4",
-				"KP_5",
-				"KP_6",
-				"KP_PLUS",
-				"Not used",
-				"KP_1",
-				"KP_2"
+				"i",
+				"k",
+				"j",
+				"l",
+				"f",
+				"g",
+				"h",
+				"r",
+				"t",
+				"y",
+				"RSHIFT",
+				"LEFTBRACKET",
+				"RIGHTBRACKET",
+				"Not used"
 			]
 		}
 	],
@@ -158,8 +158,8 @@
 				"0",
 				"1",
 				"-12",
-				"6",
 				"4",
+				"6",
 				"-10",
 				"7"
 			]

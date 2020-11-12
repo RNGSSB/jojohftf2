@@ -921,7 +921,7 @@ var(1) = ceil(7*fvar(1))
 
 [State 220, 1]
 type = Hitdef
-triggerall = !root,var(6)
+
 trigger1 = time >= 2
 attr = S, HP
 hitflag = MAF
