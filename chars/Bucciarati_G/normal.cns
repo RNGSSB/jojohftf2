@@ -980,7 +980,7 @@ air.velocity = -10,-4
 fall = 1
 air.fall = 1
 fall.recover = 1
-fall.recovertime = 35
+
 hitonce = 1      ;複数の敵がいても1人にヒット
 persistent=0     ;1度しか実行しない
 guard.dist = 300 ;これを設定しないとAIがガードできない

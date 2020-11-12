@@ -1030,7 +1030,6 @@ air.velocity = -5,-4*(1.0-ifelse(var(40)>0,var(40)*.125,0))*(var(40)<=7)
 airguard.velocity = -4,-3.2*(1.0-ifelse(var(40)>0,var(40)*.125,0))*(var(40)<=7)
 fall = 1
 fall.recover = 1
-fall.recovertime = 24
 guard.kill = 0
 yaccel = .44
 p2facing = 1
@@ -9262,17 +9261,19 @@ y = .4
 [State 5040, 5] ;Recover near ground
 type = SelfState
 triggerall = time >= 10
-triggerall = Vel Y > 0
+triggerall = Vel Y < 0
 triggerall = Pos Y >= -20
 triggerall = alive
+triggerall = canRecover && HitOver
 trigger1 = Command = "recovery"
 value = 5200 ;HITFALL_RECOVER
 
 [State 5040, 6]; Recover in mid air
 type = SelfState
 triggerall = time >= 10
-triggerall = Vel Y > -1
+triggerall = Vel Y < 0
 triggerall = alive
+triggerall = canRecover && HitOver
 trigger1 = Command = "recovery"
 value = 5210 ;HITFALL_AIRRECOVER
 

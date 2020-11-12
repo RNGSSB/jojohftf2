@@ -129,6 +129,11 @@ name = "recovery";Required (do not remove)
 command = y+z
 time = 1
 
+[Command]
+name = "recovery";Required (do not remove)
+command = a
+time = 1
+
 ;-| Dir + Button |---------------------------------------------------------
 [Command]
 name = "down_a"
@@ -1683,7 +1688,7 @@ value = 810
 triggerall = !var(59)
 triggerall = !var(0) || (var(0) = 1 && var(2)) || (var(0) = 3 && var(2))
 triggerall = roundstate = 2
-triggerall = command = "recovery" || command = "a"
+triggerall = command = "recovery"
 triggerall = prevstateno != [810,811]
 trigger1 = stateno = 150 || stateno = 151 || stateno = 152 || stateno = 153
 ignorehitpause = 0
@@ -10532,7 +10537,7 @@ triggerall = var(59) >= 1 || helper(33333),fvar(1)
 triggerall = !var(49)
 triggerall = var(0) != -1
 triggerall = var(0) != 2
-triggerall = Vel Y > 0
+triggerall = Vel Y < 0
 triggerall = Pos Y >= -20
 triggerall = alive
 triggerall = (stateno = 5040 && HitOver && !var(34)) || stateno = 5050 || stateno = 5071
@@ -10549,7 +10554,7 @@ triggerall = var(0) != -1
 triggerall = var(0) != 2
 triggerall = Vel Y > -1
 triggerall = alive
-triggerall = (stateno = 5040 && HitOver && !var(34)) || (stateno = 5050 && CanRecover)
+triggerall = (stateno = 5040 && HitOver && !var(34)) || (stateno = 5050 && CanRecover && HitOver)
 triggerall = helper(33333),var(55) <= 3-(life<700||life-p2life<333||var(59)=3||random<700)-(life<500||life<p2life||var(59)=3||random<800)-(life<333||p2life-life>=333||var(59)=3||random<900) || random < 10
 
 trigger1 = p2bodydist x = [66+(var(49)>0)*10,180]

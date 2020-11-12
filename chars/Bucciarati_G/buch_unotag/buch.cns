@@ -6531,10 +6531,10 @@ value = 5050
 
 [State 5050, 4]
 type = ChangeState
-triggerall = Vel Y > 0
+triggerall = Vel Y < 0
 triggerall = Pos Y >= -20
 triggerall = alive
-triggerall = CanRecover
+triggerall = CanRecover && HitOver
 trigger1 = var(59) = 0
 trigger1 = Command = "recovery"
 trigger2 = var(59)=1
@@ -6543,9 +6543,9 @@ value = 5200
 
 [State 5050, 5]
 type = ChangeState
-triggerall = Vel Y > -1
+triggerall = Vel Y < 0
 triggerall = alive
-triggerall = CanRecover
+triggerall = CanRecover && HitOver
 trigger1 = var(59) = 0
 trigger1 = Command = "recovery"
 trigger2 = var(59)=1
@@ -8071,7 +8071,7 @@ ground.velocity = 0,-8
 air.velocity = -1,-6
 fall = 1
 fall.recover = 0
-fall.recovertime = 99
+
 
 [State 3000, ‚­‚ç‚¦]
 type = PlaySnd
@@ -8466,7 +8466,7 @@ ground.velocity = -4
 air.velocity = -2,-1
 fall = 0
 air.fall = 1
-fall.recovertime = 40
+
 
 [Statedef 100100]
 type    = C

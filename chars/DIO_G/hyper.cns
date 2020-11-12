@@ -8987,6 +8987,7 @@ supermovetime = 999
 ownpal = 1
 ignorehitpause = 1
 
+
 [State 1100, VarSet]
 type = VarSet
 trigger1 = Time = 0
@@ -9216,7 +9217,7 @@ sound = S8000,10
 pos = 0,0
 darken = 0
 p2defmul = 1
-poweradd = -3000
+poweradd = -5000
 unhittable = 0
 persistent = 0
 

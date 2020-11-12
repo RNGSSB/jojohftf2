@@ -82,7 +82,7 @@ air.cornerpush.veloff = 0
 air.hittime = 14
 fall = 0
 air.fall = 1
-fall.recovertime = 30
+
 guard.kill = 0
 id = 10200
 p2facing = 1
@@ -194,7 +194,7 @@ air.cornerpush.veloff = 0
 air.hittime = 12
 fall = 0
 air.fall = 1
-fall.recovertime = 30
+
 guard.kill = 0
 id = 10201
 p2facing = 1
@@ -316,7 +316,7 @@ air.cornerpush.veloff = 0
 air.hittime = 15
 fall = 0
 air.fall = 1
-fall.recovertime = 30
+
 guard.kill = 0
 id = 10210
 p2facing = 1
@@ -417,7 +417,7 @@ air.cornerpush.veloff = 0
 air.hittime = 18
 fall = 0
 air.fall = 1
-fall.recovertime = 30
+
 guard.kill = 0
 id = 10211
 p2facing = 1
@@ -537,7 +537,7 @@ air.cornerpush.veloff = 0
 air.hittime = 15
 fall = 0
 air.fall = 1
-fall.recovertime = 30
+
 guard.kill = 0
 id = 10212
 p2facing = 1
@@ -666,7 +666,7 @@ air.cornerpush.veloff = 0
 air.hittime = 18
 fall = 0
 air.fall = 1
-fall.recovertime = 30
+
 guard.kill = 0
 id = 10220
 p2facing = 1
@@ -704,7 +704,7 @@ air.cornerpush.veloff = 0
 air.hittime = 18
 fall = 0
 air.fall = 1
-fall.recovertime = 30
+
 guard.kill = 0
 id = 10221
 p2facing = 1
@@ -823,7 +823,7 @@ air.cornerpush.veloff = -16
 air.hittime = 20
 fall = 0
 air.fall = 1
-fall.recovertime = 30
+
 guard.kill = 0
 id = 10222
 p2facing = 1
@@ -937,7 +937,7 @@ air.cornerpush.veloff = 0
 air.hittime = 15
 fall = 0
 air.fall = 1
-fall.recovertime = 30
+
 guard.kill = 0
 id = 10310
 p2facing = 1
@@ -1049,7 +1049,7 @@ air.cornerpush.veloff = 0
 air.hittime = 14
 fall = 0
 air.fall = 1
-fall.recovertime = 30
+
 guard.kill = 0
 id = 10400
 p2facing = 1
@@ -1161,7 +1161,7 @@ air.cornerpush.veloff = 0
 air.hittime = 15
 fall = 0
 air.fall = 1
-fall.recovertime = 30
+
 guard.kill = 0
 id = 10410
 p2facing = 1
@@ -1279,7 +1279,7 @@ air.cornerpush.veloff = 0
 air.hittime = 20
 fall = 0
 air.fall = 1
-fall.recovertime = 30
+
 guard.kill = 0
 id = 10420
 p2facing = 1
@@ -1385,7 +1385,7 @@ ground.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
 air.hittime = 10
 air.fall = 1
-fall.recovertime = 30
+
 guard.kill = 0
 id = 10510
 p2facing = 1
@@ -1494,7 +1494,7 @@ air.hittime = 12
 fall = 0
 guard.kill = 0
 air.fall = 1
-fall.recovertime = 30
+
 p2facing = 1
 
 [State 0, hit]
@@ -1528,7 +1528,7 @@ ground.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
 air.hittime = 14
 air.fall = 1
-fall.recovertime = 30
+
 yaccel = .44
 guard.kill = 0
 p2facing = 1
@@ -1647,7 +1647,7 @@ ground.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
 air.hittime = 20
 air.fall = 1
-fall.recovertime = 30
+
 guard.kill = 0
 id = 10520
 p2facing = 1
@@ -1745,7 +1745,7 @@ air.cornerpush.veloff = 0
 air.hittime = 19
 fall = 0
 air.fall = 1
-fall.recovertime = 30
+
 guard.kill = 0
 id = 10312
 p2facing = 1
@@ -1865,7 +1865,7 @@ air.cornerpush.veloff = 0
 air.hittime = 18
 fall = 0
 air.fall = 1
-fall.recovertime = 30
+
 guard.kill = 0
 id = 10320
 p2facing = 1 
@@ -1972,7 +1972,7 @@ air.cornerpush.veloff = 0
 air.hittime = 18
 fall = 0
 air.fall = 1
-fall.recovertime = 30
+
 guard.kill = 0
 id = 10321
 p2facing = 1
@@ -2083,7 +2083,7 @@ air.cornerpush.veloff = 0
 air.hittime = 28
 fall = 0
 air.fall = 1
-fall.recovertime = 30
+
 guard.kill = 0
 id = 10322
 p2facing = 1
@@ -2185,7 +2185,7 @@ airguard.velocity = -3,-3*(1.0-ifelse(var(40)>0,var(40)*.125,0))*(var(40)<=7)
 air.hittime = 12
 fall = 0
 air.fall = 1
-fall.recovertime = 30
+
 guard.kill = 0
 p2facing = 1
 
@@ -2296,7 +2296,7 @@ airguard.velocity = -3,-3*(1.0-ifelse(var(40)>0,var(40)*.125,0))*(var(40)<=7)
 air.hittime = 17
 fall = 0
 air.fall = 1
-fall.recovertime = 30
+
 guard.kill = 0
 p2facing = 1
 
@@ -2408,7 +2408,7 @@ airguard.velocity = -3,-6*(1.0-ifelse(var(40)>0,var(40)*.125,0))*(var(40)<=7)
 air.hittime = 17
 fall = 0
 air.fall = 1
-fall.recovertime = 30
+
 guard.kill = 0
 p2facing = 1
 

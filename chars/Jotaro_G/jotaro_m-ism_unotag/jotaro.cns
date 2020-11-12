@@ -2370,7 +2370,7 @@ type = ChangeState
 triggerall = !var(49)
 triggerall = var(0) != -1
 triggerall = var(0) != 2
-triggerall = Vel Y > 0
+triggerall = Vel Y < 0
 triggerall = Pos Y >= -20
 triggerall = alive
 triggerall = HitOver && !var(34)
@@ -2382,7 +2382,7 @@ value = 5200
 type = ChangeState
 triggerall = var(0) != -1
 triggerall = var(0) != 2
-triggerall = Vel Y > -1
+triggerall = Vel Y < 0
 triggerall = alive
 triggerall = HitOver && !var(34)
 trigger1 = !var(59)
@@ -2432,7 +2432,7 @@ type = ChangeState
 triggerall = !var(49)
 triggerall = var(0) != -1
 triggerall = var(0) != 2
-triggerall = Vel Y > 0
+triggerall = Vel Y < 0
 triggerall = Pos Y >= -20
 triggerall = alive
 
@@ -2444,7 +2444,7 @@ value = 5200
 type = ChangeState
 triggerall = var(0) != -1
 triggerall = var(0) != 2
-triggerall = Vel Y > -1
+triggerall = Vel Y < 0
 triggerall = alive
 triggerall = CanRecover
 trigger1 = !var(59)
@@ -2532,7 +2532,7 @@ type = ChangeState
 triggerall = !var(49)
 triggerall = var(0) != -1
 triggerall = var(0) != 2
-triggerall = Vel Y > 0
+triggerall = Vel Y < 0
 triggerall = Pos Y >= -20
 triggerall = alive
 trigger1 = !var(59)
@@ -5789,10 +5789,10 @@ y = .4
 
 [State 5040, 5]
 type = SelfState
-triggerall = Vel Y > 0
+triggerall = Vel Y < 0
 triggerall = Pos Y >= -20
 triggerall = alive
-trigger1 = Command = "recovery"
+trigger1 = Command = "recovery" 
 value = 5200
 
 [State 2601, SelfState]

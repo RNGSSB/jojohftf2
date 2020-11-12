@@ -667,7 +667,7 @@ givepower = 20*!var(0)
 persistent = 1
 fall = 0
 air.fall = 1
-fall.recovertime = 30
+
 yaccel = .35
 guard.kill = 0
 ignorehitpause = 0
@@ -718,7 +718,7 @@ givepower = 20*!var(0)
 persistent = 1
 fall = 0
 air.fall = 1
-fall.recovertime = 30
+
 yaccel = .35
 guard.kill = 0
 p2facing = 1
@@ -768,7 +768,7 @@ givepower = 20*!var(0)
 persistent = 1
 fall = 0
 air.fall = 1
-fall.recovertime = 30
+
 yaccel = .35
 guard.kill = 0
 p2facing = 1
@@ -813,7 +813,7 @@ givepower = 20*!var(0)
 persistent = 1
 fall = 1
 air.fall = 1
-fall.recovertime = 30
+
 yaccel = .35
 guard.kill = 0
 p2facing = 1
@@ -857,7 +857,7 @@ givepower = 0,0
 persistent = 1
 fall = 0
 air.fall = 1
-fall.recovertime = 30
+
 yaccel = .35
 guard.kill = 0
 ignorehitpause = 0
@@ -908,7 +908,7 @@ givepower = 0,0
 persistent = 1
 fall = 0
 air.fall = 1
-fall.recovertime = 30
+
 yaccel = .35
 guard.kill = 0
 p2facing = 1
@@ -958,7 +958,7 @@ givepower = 0,0
 persistent = 1
 fall = 0
 air.fall = 1
-fall.recovertime = 30
+
 yaccel = .35
 guard.kill = 0
 p2facing = 1
@@ -1003,7 +1003,7 @@ givepower = 0,0
 persistent = 1
 fall = 1
 air.fall = 1
-fall.recovertime = 30
+
 yaccel = .35
 guard.kill = 0
 p2facing = 1
@@ -2142,7 +2142,7 @@ givepower = 20*!var(0)
 persistent = 1
 fall = 0
 air.fall = 1
-fall.recovertime = 30
+
 yaccel = .35
 guard.kill = 0
 p2facing = 1
@@ -2192,7 +2192,7 @@ givepower = 20*!var(0)
 persistent = 1
 fall = 0
 air.fall = 1
-fall.recovertime = 30
+
 yaccel = .35
 guard.kill = 0
 p2facing = 1
@@ -2242,7 +2242,7 @@ givepower = 20*!var(0)
 persistent = 1
 fall = 0
 air.fall = 1
-fall.recovertime = 30
+
 yaccel = .35
 guard.kill = 0
 p2facing = 1
@@ -2673,7 +2673,7 @@ getpower = 40+(var(5)*10)
 givepower = 20+(var(5)*5) 
 persistent = 0
 air.fall = 1
-fall.recovertime = 30
+
 yaccel = .35
 guard.kill = 0
 p2facing = 1
@@ -2716,7 +2716,7 @@ getpower = 0,0
 givepower = 0,0
 persistent = 0
 air.fall = 1
-fall.recovertime = 30
+
 yaccel = .35
 guard.kill = 0
 p2facing = 1
@@ -3779,7 +3779,7 @@ givepower = 20+(var(5)*5)
 persistent = 0
 fall = 1
 air.fall = 1
-fall.recovertime = 30
+
 yaccel = .35
 guard.kill = 0
 p2facing = 1
@@ -3820,7 +3820,7 @@ givepower = 20+(var(5)*5)
 persistent = 0
 fall = 1
 air.fall = 1
-fall.recovertime = 30
+
 yaccel = .35
 guard.kill = 0
 p2facing = 1
@@ -3860,7 +3860,7 @@ givepower = 0,0
 persistent = 0
 fall = 1
 air.fall = 1
-fall.recovertime = 30
+
 yaccel = .35
 guard.kill = 0
 p2facing = 1
@@ -3901,7 +3901,7 @@ givepower = 0,0
 persistent = 0
 fall = 1
 air.fall = 1
-fall.recovertime = 30
+
 yaccel = .35
 guard.kill = 0
 p2facing = 1
@@ -4087,7 +4087,7 @@ givepower = 20+(var(5)*5)
 persistent = 0
 fall = 1
 air.fall = 1
-fall.recovertime = 30
+
 yaccel = .35
 guard.kill = 0
 p2facing = 1
@@ -4409,7 +4409,7 @@ getpower = 40+(var(5)*10)
 givepower = 20+(var(5)*5) 
 persistent = 0
 air.fall = 1
-fall.recovertime = 30
+
 yaccel = .35
 guard.kill = 0
 p2facing = 1
@@ -4451,7 +4451,7 @@ getpower = 40+(var(5)*10)
 givepower = 20+(var(5)*5) 
 persistent = 0
 air.fall = 1
-fall.recovertime = 30
+
 yaccel = .35
 guard.kill = 0
 p2facing = 1
@@ -4492,7 +4492,7 @@ getpower = 0,0
 givepower = 0,0
 persistent = 0
 air.fall = 1
-fall.recovertime = 30
+
 yaccel = .35
 guard.kill = 0
 p2facing = 1
@@ -4532,7 +4532,7 @@ getpower = 0,0
 givepower = 0,0
 persistent = 0
 air.fall = 1
-fall.recovertime = 30
+
 yaccel = .35
 guard.kill = 0
 p2facing = 1

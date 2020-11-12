@@ -2606,7 +2606,7 @@ ground.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
 air.hittime = 18
 fall = 1
-fall.recovertime = 30
+
 yaccel = .36
 id = stateno
 p2facing = 1
@@ -2645,7 +2645,7 @@ ground.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
 air.hittime = 18
 fall = 1
-fall.recovertime = 30
+
 yaccel = .36
 id = stateno
 p2facing = 1
@@ -2684,7 +2684,7 @@ ground.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
 air.hittime = 18
 fall = 1
-fall.recovertime = 30
+
 yaccel = .36
 id = stateno
 p2facing = 1
@@ -5093,7 +5093,7 @@ ground.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
 air.hittime = 14
 fall = 1
-fall.recovertime = 32
+
 yaccel = .36
 id = stateno
 p2facing = 1
@@ -5129,7 +5129,7 @@ ground.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
 air.hittime = 14
 fall = 1
-fall.recovertime = 36
+
 yaccel = .36
 id = stateno
 p2facing = 1
@@ -5165,7 +5165,7 @@ ground.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
 air.hittime = 14
 fall = 1
-fall.recovertime = 36
+
 yaccel = .36
 id = stateno
 p2facing = 1
@@ -5407,7 +5407,7 @@ air.type = low
 air.hittime = 12
 fall = 0
 air.fall = 1
-fall.recovertime = 22
+
 guard.kill = 0
 yaccel = .36
 persistent = 0
@@ -5447,7 +5447,7 @@ air.type = low
 air.hittime = 12
 fall = 0
 air.fall = 1
-fall.recovertime = 22
+
 guard.kill = 0
 yaccel = .36
 persistent = 0
@@ -5588,7 +5588,7 @@ air.type = low
 air.hittime = 12
 fall = 0
 air.fall = 1
-fall.recovertime = 22
+
 guard.kill = 0
 yaccel = .36
 persistent = 0
@@ -5628,7 +5628,7 @@ air.type = low
 air.hittime = 12
 fall = 0
 air.fall = 1
-fall.recovertime = 22
+
 guard.kill = 0
 yaccel = .36
 persistent = 0
@@ -5860,7 +5860,7 @@ air.type = low
 air.hittime = 12
 fall = 0
 air.fall = 1
-fall.recovertime = 22
+
 guard.kill = 0
 yaccel = .36
 persistent = 0
@@ -5900,7 +5900,7 @@ air.type = low
 air.hittime = 12
 fall = 0
 air.fall = 1
-fall.recovertime = 22
+
 guard.kill = 0
 yaccel = .36
 persistent = 1
@@ -6231,7 +6231,7 @@ air.type = low
 air.hittime = 12
 fall = 0
 air.fall = 1
-fall.recovertime = 22
+
 guard.kill = 0
 yaccel = .36
 palfx.color = 60
@@ -7104,7 +7104,7 @@ ground.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
 air.hittime = 18
 fall = 1
-fall.recovertime = 35
+
 yaccel = .36
 id = stateno
 p2facing = 1
@@ -7143,7 +7143,7 @@ ground.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
 air.hittime = 18
 fall = 1
-fall.recovertime = 35
+
 yaccel = .36
 id = stateno
 p2facing = 1
@@ -7182,7 +7182,7 @@ ground.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
 air.hittime = 18
 fall = 1
-fall.recovertime = 35
+
 yaccel = .36
 id = stateno
 p2facing = 1
@@ -9674,7 +9674,7 @@ ground.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
 air.hittime = 14
 fall = 1
-fall.recovertime = 36
+
 yaccel = .36
 id = stateno
 p2facing = 1
@@ -14641,17 +14641,19 @@ ownpal = 1
 [State 5050, 4]
 type = selfState
 triggerall = Pos Y >= -20
+triggerall = Vel Y < 0
 triggerall = alive
-triggerall = time >= 10
 triggerall = prevstateno != [3021,3121]
+triggerall = CanRecover && HitOver
 trigger1 = Command = "recovery"
 value = 5200
 
 [State 5050, 5]
 type = selfState
 triggerall = alive
-triggerall = time >= 10
+triggerall = Vel Y < 0
 triggerall = prevstateno != [3021,3121]
+triggerall = CanRecover && HitOver
 trigger1 = Command = "recovery"
 value = 5210
 

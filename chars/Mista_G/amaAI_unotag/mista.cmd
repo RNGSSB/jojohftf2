@@ -260,6 +260,21 @@ command = x+y
 time = 1
 
 [Command]
+name = "recovery"
+command = y+z
+time = 1
+
+[Command]
+name = "recovery"
+command = x+z
+time = 1
+
+[Command]
+name = "recovery"
+command = a
+time = 1
+
+[Command]
 name = "x+y+z"
 command = x+y+z
 

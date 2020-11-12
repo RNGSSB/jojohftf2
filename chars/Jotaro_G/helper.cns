@@ -3570,6 +3570,7 @@ triggerall = var(0) != 2
 trigger1 = AnimElem = 1
 value = 0, 2
 channel = 0
+volumescale = 80
 
 [State 1000, Spark]
 type = Explod
@@ -3615,7 +3616,7 @@ guard.pausetime = 0,!(var(28)>=10&&random%8=0)*15
 sparkno = S8204
 guard.sparkno = S8100
 sparkxy = -20, -63
-hitsound = S1,5
+hitsound = S1,6
 guardsound = S4,0
 ground.type = High
 air.type = High
@@ -3623,7 +3624,7 @@ ground.slidetime = 14
 ground.hittime = 14
 air.hittime = 14
 guard.ctrltime = 14
-ground.velocity = -8.5
+ground.velocity = -9
 guard.velocity = -7.5
 air.velocity = ifelse(-4.2*.9**((var(42)-1)+!var(42))>-.8,-.8,-4.2*.9**((var(42)-1)+!var(42))), ifelse((-4.2+(.8*((var(42)-1)+!var(42))))>0,0,(-4.2+(.8*((var(42)-1)+!var(42)))))
 ground.cornerpush.veloff = 0
@@ -3655,7 +3656,7 @@ guard.pausetime = 0,!(var(28)>=10&&random%8=0)*15
 sparkno = S8204
 guard.sparkno = S8100
 sparkxy = -20, -63
-hitsound = S1,5
+hitsound = S1,6
 guardsound = S4,0
 ground.type = High
 air.type = High
@@ -3663,7 +3664,7 @@ ground.slidetime = 14
 ground.hittime = 14
 air.hittime = 14
 guard.ctrltime = 14
-ground.velocity = -8.5
+ground.velocity = -9
 guard.velocity = -7.5
 air.velocity = ifelse(-4.2*.9**((var(42)-1)+!var(42))>-.8,-.8,-4.2*.9**((var(42)-1)+!var(42))), ifelse((-4.2+(.8*((var(42)-1)+!var(42))))>0,0,(-4.2+(.8*((var(42)-1)+!var(42)))))
 ground.cornerpush.veloff = 0
@@ -3749,7 +3750,6 @@ value = 1
 type = PlayerPush
 trigger1 = 1
 value = 1
-
 
 [State -2, CornerPush]
 type = VarAdd

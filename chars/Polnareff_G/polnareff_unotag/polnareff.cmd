@@ -424,6 +424,10 @@ name = "recovery"
 command = x+y
 time = 1
 
+[Command]
+name = "recovery"
+command = a
+time = 1
 
 
 [Command]

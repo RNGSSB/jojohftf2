@@ -3557,7 +3557,7 @@ air.velocity = -0.5,-1
 kill = 1 - parent,var(14)
 p2facing = 1
 air.fall = 1
-fall.recovertime = 30
+
 getpower = 10 * (parent,var(14) = 0),0
 givepower = 10,0
 guard.kill = 0
@@ -3593,7 +3593,7 @@ air.velocity = -0.5,-1
 kill = 1 - parent,var(14)
 p2facing = 1
 air.fall = 1
-fall.recovertime = 30
+
 getpower = 10 * (parent,var(14) = 0),0
 givepower = 10,0
 guard.kill = 0
@@ -3629,7 +3629,7 @@ air.velocity = -0.5,-1
 kill = 1 - parent,var(14)
 p2facing = 1
 air.fall = 1
-fall.recovertime = 30
+
 getpower = 10 * (parent,var(14) = 0),0
 givepower = 10,0
 guard.kill = 0
@@ -10684,18 +10684,18 @@ value = 5050
 
 [State 5050, 4]
 type = ChangeState
-triggerall = Vel Y > 0
+triggerall = Vel Y < 0
 triggerall = Pos Y >= -20
 triggerall = alive
-trigger1 = CanRecover
+trigger1 = CanRecover && HitOver
 trigger1 = Command = "recovery"
 value = 5200
 
 [State 5050, 5]
 type = ChangeState
-triggerall = Vel Y > -1
+triggerall = Vel Y < 0
 triggerall = alive
-trigger1 = CanRecover
+trigger1 = CanRecover&& HitOver
 trigger1 = Command = "recovery"
 value = 5210
 

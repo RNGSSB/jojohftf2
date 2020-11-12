@@ -30,18 +30,18 @@ y = GetHitVar(yaccel)
 
 [State 5573, 4]
 type = SelfState
-triggerall = Vel Y > 0
-triggerall = Pos Y >= Const(movement.air.gethit.groundrecover.ground.threshold)
+triggerall = Vel Y < 0
+triggerall = Pos Y >= -20
 triggerall = alive
-triggerall = CanRecover
+triggerall = CanRecover && HitOver
 trigger1 = Command = "recovery"
 value = 5200
 
 [State 5573, 5]
 type = SelfState
-triggerall = Vel Y > Const(movement.air.gethit.airrecover.threshold)
+triggerall = Vel Y < Const(movement.air.gethit.airrecover.threshold)
 triggerall = alive
-triggerall = CanRecover
+triggerall = CanRecover && HitOver
 trigger1 = Command = "recovery"
 value = 5210 
 

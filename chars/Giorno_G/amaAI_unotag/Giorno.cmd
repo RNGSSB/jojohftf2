@@ -98,6 +98,9 @@ name = "recovery";Required (do not remove)
 command = y+z
 time = 1
 
+name = "recovery";Required (do not remove)
+command = a
+time = 1
 ;-| Dir + Button |---------------------------------------------------------
 [Command]
 name = "down_a"
