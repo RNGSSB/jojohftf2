@@ -592,6 +592,20 @@ var(24) = 11
 
 [State 10371, QCF Init]
 type = VarSet
+triggerall = command != "holddown"
+trigger1 = p2dist X >= 0 && command = "aimyouidiots" && command != "holdback"
+trigger2 = p2dist X < 0 && command = "gettowork" && command != "holdfwd"
+var(40) = 19
+
+[State 10371, QCB Init]
+type = VarSet
+triggerall = command != "holddown"
+trigger1 = p2dist X >= 0 && command = "gettowork" && command != "holdfwd"
+trigger2 = p2dist X < 0 && command = "aimyouidiots" && command != "holdback"
+var(41) = 19
+
+[State 10371, QCF Init]
+type = VarSet
 triggerall = command != "holdup"
 trigger1 = command = "dx3"   
 var(42) = 17

@@ -476,36 +476,6 @@ command = ~F, D, DF, ~z
 time = 12
 
 [Command]
-name = "Scare1"
-command = ~B, D, DB, x, D, DB, x, D, DB, x, D, DB, x, D, DB, x, D, DB, x, D, DB, x, D, DB, x, D, DB, x
-time = 12
-
-[Command]
-name = "Scare1"
-command = ~B, D, DB, ~x, D, DB, x, D, DB, x, D, DB, x, D, DB, x, D, DB, x, D, DB, x, D, DB, x, D, DB, x, D, DB, x
-time = 12
-
-[Command]
-name = "Scare2"
-command = ~B, D, DB, y, D, DB, x, D, DB, x, D, DB, x, D, DB, x, D, DB, x, D, DB, x, D, DB, x, D, DB, x, D, DB, x
-time = 12
-
-[Command]
-name = "Scare2"
-command = ~B, D, DB, ~y, D, DB, x, D, DB, x, D, DB, x, D, DB, x, D, DB, x, D, DB, x, D, DB, x, D, DB, x, D, DB, x
-time = 12
-
-[Command]
-name = "Scare3"
-command = ~B, D, DB, z, D, DB, x, D, DB, x, D, DB, x, D, DB, x, D, DB, x, D, DB, x, D, DB, x, D, DB, x, D, DB, x
-time = 12
-
-[Command]
-name = "Scare3"
-command = ~B, D, DB, ~z, D, DB, x, D, DB, x, D, DB, x, D, DB, x, D, DB, x, D, DB, x, D, DB, x, D, DB, x, D, DB, x
-time = 12
-
-[Command]
 name = "MUDA 1"
 command = ~D, DB, B, x
 time = 12
@@ -558,38 +528,6 @@ command = ~F, z,y,x, F
 time = 16
 buffer.time = 3
 
-[Command]
-name = "KuretsuGanshiha" 
-command = ~F, z,y,x, F
-
-time = 16
-buffer.time = 3
-
-[Command]
-name = "KuretsuGanshiha" 
-command = ~F, z,y,x, F
-
-time = 16
-buffer.time = 3
-[Command]
-name = "KuretsuGanshiha" 
-command = ~F, z,y,x, F
-
-time = 16
-buffer.time = 3
-
-[Command]
-name = "KuretsuGanshiha" 
-command= ~F, z,y,x, F
-
-time = 16
-buffer.time = 3
-[Command]
-name = "KuretsuGanshiha" 
-command = ~F, z,y,x, F
-
-time = 16
-buffer.time = 3
 
 [Command]
 name = "Stand Strike"
@@ -1102,7 +1040,7 @@ triggerall = var(49)
 triggerall = roundstate = 2
 triggerall = command = "Checkmate1" || command = "Checkmate2" || command = "Checkmate3" || (var(26)&2**15) || (var(26)&2**16) || (var(26)&2**17)
 triggerall = statetype != A
-triggerall = power >= 1000
+triggerall = power >= 1000000
 triggerall = numhelper(10000)
 triggerall = helper(10000),stateno != 10840
 trigger1 = ctrl || stateno = 40 || (stateno = 100 && time >= 4) || stateno = 101 || (stateno = 105 && time >= 4)

@@ -412,7 +412,7 @@ type = Explod
 trigger1 = parent,var(55) = 3
 anim = 30003
 ID = 9003
-IfElse(TeamSide = 1,75,245),30
+pos = IfElse(TeamSide = 1,75,245),30
 postype = left
 facing = 1
 vfacing = 1
@@ -3257,7 +3257,7 @@ trigger1 = Time = 0
 attr = A, SP
 damage = ceil(65*root,fvar(11)),8
 hitflag = MAF
-guardflag = MA
+guardflag = LA
 animtype = light
 priority = 5, Hit
 pausetime = 0,14

@@ -627,11 +627,11 @@ value = 2900
 triggerall = var(59)<=0&& RoundState = 2
 triggerall = NumHelper(1125) = 0
 triggerall = NumHelper(1401) = 0
-triggerall = power >= 1000 && command = "aimyouidiots"
+triggerall = power >= 1000
 triggerall = var(55) != 4
+
 triggerall = !Ishelper
 triggerall = statetype != A
-;triggerall = 
 triggerall = numhelper(10371)
 triggerall = helper(10371),var(40)
 triggerall = (helper(10371),var(0) = [1,3]) || (helper(10371),var(1) = [1,3]) 
@@ -1239,7 +1239,7 @@ value = 4000
 triggerall = var(59) = 1 && RoundState = 2
 triggerall = NumHelper(4003) = 0
 triggerall = power >= 1000
-triggerall = statetype != A && command = "rollingstone" 
+triggerall = statetype != A
 triggerall= EnemyNear,StateType != L
 triggerall= EnemyNear,MoveType != H
 triggerall= EnemyNear,MoveType = A

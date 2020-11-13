@@ -12577,34 +12577,6 @@ trigger1 = !(var(26)&2**8)
 trigger1 = command = "The World 3"
 var(26) = 2**8
 
-
-
-[State -2]
-type = VarAdd
-triggerall = !var(59)
-triggerall = var(24) > 0
-trigger1 = !(var(26)&2**9)
-trigger1 = command = "Scare1"
-var(26) = 2**9
-
-[State -2]
-type = VarAdd
-triggerall = !var(59)
-triggerall = var(24) > 0
-trigger1 = !(var(26)&2**10)
-trigger1 = command = "Scare2"
-var(26) = 2**10
-
-[State -2]
-type = VarAdd
-triggerall = !var(59)
-triggerall = var(24) > 0
-trigger1 = !(var(26)&2**11)
-trigger1 = command = "Scare3"
-var(26) = 2**11
-
-
-
 [State -2]
 type = VarAdd
 triggerall = !var(59)

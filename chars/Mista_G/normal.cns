@@ -303,7 +303,7 @@ ignorehitpause = 1
 
 [State 1000, var]
 type = varset
-trigger1 = animelem = 5
+trigger1 = animelem = 7
 var(55) = 6
 
 [state 3003　装填]
