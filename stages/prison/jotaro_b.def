@@ -56,8 +56,8 @@ fade.range = -400,100
 intensity = 0
 
 [music]
-bgmusic = sound/jotaro.mp3
-bgvolume = 255
+bgmusic = sound/stardustcrusaders.mp3
+bgvolume = 210
 
 [bgdef]
 spr = stages/prison/jotaro_b.sff

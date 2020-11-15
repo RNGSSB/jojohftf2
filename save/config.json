@@ -94,7 +94,7 @@
 	"TrainingChar": "chars/training/training.def",
 	"TurnsRecoveryBase": 0,
 	"TurnsRecoveryBonus": 20,
-	"VolumeBgm": 70,
+	"VolumeBgm": 85,
 	"VolumeMaster": 100,
 	"VolumeSfx": 60,
 	"VRetrace": 0,
