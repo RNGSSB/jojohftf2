@@ -11589,14 +11589,14 @@ trigger1 = time >= 2
 anim = 6002
 id = 6002
 postype = Back
-pos = 140+var(0),48-var(1)
+pos = 140+var(0),28-var(1)
 ownpal = 1
 bindtime = -1
 ignorehitpause = 1
 sprpriority = -103
 pausemovetime = -1
 supermovetime = -1
-scale = 72,4
+scale = 43,1
 
 [State 6000, Explod];ƒQ[ƒW
 type = Explod
@@ -11605,14 +11605,14 @@ trigger1 = time >= 2
 anim = 6001
 id = 6001
 postype = Back
-pos = 140+var(0),48-var(1)
+pos = 140+var(0),28-var(1)
 ownpal = 0
 bindtime = -1
 ignorehitpause = 1
 sprpriority = -102
 pausemovetime = -1
 supermovetime = -1
-scale = 72,1
+scale = 43,1
 
 [State 6000, Explod];˜g
 type = Explod
@@ -11621,14 +11621,14 @@ trigger1 = time >= 2
 anim = 6000
 id = 6000
 postype = Back
-pos = 140+var(0),48-var(1)
+pos = 140+var(0),28-var(1)
 ownpal = 1
 bindtime = -1
 ignorehitpause = 1
 sprpriority = -101
 pausemovetime = -1
 supermovetime = -1
-scale = .5,.5
+scale = .3,.3
 
 [State 6000, Explod];STAND
 type = Explod
@@ -11638,7 +11638,7 @@ trigger1 = time >= 2
 anim = 6003
 id = 6003
 postype = Back
-pos = ifelse(teamside=1,102,137)+var(0),51-var(1)
+pos = ifelse(teamside=1,102,137)+var(0),31-var(1)
 ownpal = 1
 bindtime = -1
 ignorehitpause = 1
@@ -11646,7 +11646,7 @@ sprpriority = -100
 facing = ifelse(teamside=1,1,-1)
 pausemovetime = -1
 supermovetime = -1
-scale = .5,.5
+scale = .3,.3
 
 [State 6000, Explod];~
 type = Explod
@@ -11663,7 +11663,7 @@ ignorehitpause = 1
 sprpriority = -100
 pausemovetime = -1
 supermovetime = -1
-scale = .5,.5
+scale = .3,.3
 
 [State 6000, RemoveExplod]
 type = RemoveExplod
@@ -11679,7 +11679,7 @@ ignorehitpause = 1
 type = ModifyExplod
 trigger1 = NumExplod(6001)
 Id = 6001
-scale = ifelse(root,var(54)>=72,72.5,root,var(54)),1
+scale = ifelse(root,var(54)>=43,43.5,root,var(54)),0.6
 ignorehitpause = 1
 
 [State 6000, RemoveExplod]
@@ -11934,7 +11934,7 @@ bindtime = -1
 facing = ifelse(teamside=1,1,-1)
 pausemovetime = 999999
 supermovetime = 999999
-scale = .5,.5
+scale = .3,.3
 
 [State 6501, ModifyExplod]
 type = ModifyExplod
@@ -12055,7 +12055,7 @@ bindtime = -1
 facing = ifelse(teamside=1,1,-1)
 pausemovetime = 999999
 supermovetime = 999999
-scale = .5,.5
+scale = .3,.3
 
 [State 6502, ModifyExplod]
 type = ModifyExplod
@@ -12169,7 +12169,7 @@ bindtime = -1
 facing = ifelse(teamside=1,1,-1)
 pausemovetime = 999999
 supermovetime = 999999
-scale = .5,.5
+scale = .3,.3
 
 [State 6503, ModifyExplod]
 type = ModifyExplod
@@ -12302,7 +12302,7 @@ bindtime = -1
 facing = ifelse(teamside=1,1,-1)
 pausemovetime = 999999
 supermovetime = 999999
-scale = .5,.5
+scale = .3,.3
 
 [State 6504, ModifyExplod]
 type = ModifyExplod
@@ -12423,7 +12423,7 @@ bindtime = -1
 facing = ifelse(teamside=1,1,-1)
 pausemovetime = 999999
 supermovetime = 999999
-scale = .5,.5
+scale = .3,.3
 
 [State 6505, ModifyExplod]
 type = ModifyExplod

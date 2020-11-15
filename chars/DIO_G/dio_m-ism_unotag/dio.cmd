@@ -1613,6 +1613,7 @@ triggerall = numhelper(10371)
 triggerall = helper(10371),var(25)
 triggerall = (helper(10371),var(0) = [1,3]) || (helper(10371),var(1) = [1,3]) || (helper(10371),var(2) = [1,3])
 triggerall = prevstateno != [810,811]
+triggerall = command = "Guard Cancel"
 triggerall = power >= 1000
 trigger1 = stateno = [150,155]
 ignorehitpause = 0

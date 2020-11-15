@@ -521,13 +521,13 @@ time = 13
  
 [Command]
 name = "Guard Cancel"
-command = ~F,D,DF,x
+command = ~F,D,DF,y
 time = 13
 
  
 [Command]
 name = "Guard Cancel"
-command = ~F,D,DF,x
+command = ~F,D,DF,z
 time = 13
 
 
@@ -1806,6 +1806,7 @@ triggerall = command = "Guard Cancel"
 triggerall = prevstateno != [810,811]
 triggerall = power >= 1000
 trigger1 = stateno = [150,155]
+trigger1 = animElem <= 90
 ignorehitpause = 0
 
 
