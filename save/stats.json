@@ -1,17 +1,17 @@
 {
   "modes":{
     "watch":{
-      "playtime":371.7
+      "playtime":803
     },
     "freebattle":{
       "playtime":2783.2333333333336
     },
     "versus":{
-      "playtime":307.1333333333333
+      "playtime":347.26666666666665
     },
     "netplayversus":{
-      "playtime":7308.349999999999
+      "playtime":7701.450000000001
     }
   },
-  "playtime":10770.416666666673
+  "playtime":11634.950000000006
 }

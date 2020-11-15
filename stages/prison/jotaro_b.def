@@ -56,7 +56,7 @@ fade.range = -400,100
 intensity = 0
 
 [music]
-bgmusic = sound/stardustcrusaders.mp3
+bgmusic = sound/stardustremix.mp3
 bgvolume = 210
 
 [bgdef]

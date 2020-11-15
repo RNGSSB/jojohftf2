@@ -2276,7 +2276,7 @@ air.velocity = -8,-8
 airguard.velocity = -3,-3
 fall.animtype = Hard
 fall = 1           ;ダウンする
-fall.recover = 0   ;0にすると相手が落下状態でも受身（x+y）をとれなくなります
+fall.recover = 1   ;0にすると相手が落下状態でも受身（x+y）をとれなくなります
 sprpriority = 3;スプライト表示優先度 (int)
 guard.kill = 0 ;ガード時のダメージで相手をKOできなくなります
 
@@ -2678,7 +2678,7 @@ air.cornerpush.veloff = 0
 getpower = 60
 givepower = 30
 fall = 1
-fall.recover = 0
+fall.recover = 1
 yaccel = .36
 
 [state 0]
@@ -2769,7 +2769,7 @@ air.cornerpush.veloff = 0
 getpower = 60
 givepower = 30
 fall = 1
-fall.recover = 0
+fall.recover = 1
 yaccel = .36
 
 [state 0]
@@ -3580,7 +3580,7 @@ ground.velocity = -1.8  ;相手が攻撃を受けて移動する速度。yに負
 air.velocity = -1.8,-0.5
 air.fall = 1
 fall.animtype = Hard
-fall.recover = 0
+fall.recover = 1
 ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
@@ -3613,7 +3613,7 @@ ground.velocity = -1.8
 air.velocity = -1.8,-0.5
 air.fall = 1
 fall.animtype = Hard
-fall.recover = 0
+fall.recover = 1
 ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0
 air.cornerpush.veloff = 0

@@ -2667,7 +2667,7 @@ ground.slidetime = 14;ヒットバック時間
 ground.hittime  = 14 ;相手が行動不能になる時間
 ground.velocity = -6
 guard.velocity = -5.5
-air.velocity = -1.4,-1.4
+air.velocity = -1.4,-1
 air.type = High
 
 ground.cornerpush.veloff = 0

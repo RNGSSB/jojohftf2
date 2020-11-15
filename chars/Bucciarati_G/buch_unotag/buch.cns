@@ -4055,7 +4055,7 @@ ground.velocity = 0,-2
 air.velocity = 0,-1.5
 air.fall = 1
 fall.animtype = Hard
-fall.recover = 0
+fall.recover = 1
 ground.cornerpush.veloff = -3.5
 
 [State 3000, 上と同じ]
@@ -4088,7 +4088,7 @@ ground.velocity = 0,-2
 air.velocity = 0,-1.5
 air.fall = 1
 fall.animtype = Hard
-fall.recover = 0
+fall.recover = 1
 ground.cornerpush.veloff = -3.5
 
 [State 3000, 上と同じ]
@@ -4116,7 +4116,7 @@ ground.velocity = 0,-2
 air.velocity = 0,-1.5
 air.fall = 1
 fall.animtype = Hard
-fall.recover = 0
+fall.recover = 1
 ground.cornerpush.veloff = -3.5
 
 [State 3000, ヒット定義]
@@ -4143,7 +4143,7 @@ air.velocity = -5,-4
 airguard.velocity = -3,-3
 fall.animtype = Hard
 fall = 1
-fall.recover = 0
+fall.recover = 1
 
 [State 301, 音を鳴らす]
 type = PlaySnd
@@ -4333,7 +4333,7 @@ ground.velocity = 0,-2
 air.velocity = 0,-1.5
 air.fall = 1
 fall.animtype = Hard
-fall.recover = 0
+fall.recover = 1
 ground.cornerpush.veloff = -3.5
 
 [State 3000, 上と同じ]
@@ -4366,7 +4366,7 @@ ground.velocity = 0,-2
 air.velocity = 0,-1.5
 air.fall = 1
 fall.animtype = Hard
-fall.recover = 0
+fall.recover = 1
 ground.cornerpush.veloff = -3.5
 
 [State 3000, 上と同じ]
@@ -4394,7 +4394,7 @@ ground.velocity = 0,-2
 air.velocity = 0,-1.5
 air.fall = 1
 fall.animtype = Hard
-fall.recover = 0
+fall.recover = 1
 ground.cornerpush.veloff = -3.5
 
 [State 3000, ヒット定義]
@@ -4421,7 +4421,7 @@ air.velocity = -5,-4
 airguard.velocity = -3,-3
 fall.animtype = Hard
 fall = 1
-fall.recover = 0
+fall.recover = 1
 
 [State 301, 音を鳴らす]
 type = PlaySnd
@@ -7606,7 +7606,7 @@ ground.hittime  = 15
 ground.velocity = -3,-4
 air.velocity = -3,-4
 air.fall = 1
-fall.recover = 0
+fall.recover = 1
 hitonce = 1
 persistent=0
 guard.dist = 300
@@ -8070,7 +8070,7 @@ ground.hittime  = 20
 ground.velocity = 0,-8
 air.velocity = -1,-6
 fall = 1
-fall.recover = 0
+fall.recover = 1
 
 
 [State 3000, くらえ]
@@ -8151,7 +8151,7 @@ ground.velocity = -1.8
 air.velocity = 0,ifelse(var(40)<30,-3+(var(40)*0.2),ifelse((var(40)*0.2)<0,0,(var(40)*0.2)))
 air.fall = 1
 fall.animtype = Hard
-fall.recover = 0
+fall.recover = 1
 ground.cornerpush.veloff = -3.5
 sprpriority = 3
 
@@ -8180,7 +8180,7 @@ ground.velocity = -1.8
 air.velocity = -3
 air.fall = 1
 fall.animtype = Hard
-fall.recover = 0
+fall.recover = 1
 ground.cornerpush.veloff = -3.5
 sprpriority = 3
 
