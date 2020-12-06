@@ -235,6 +235,7 @@ triggerall = IsHelper
 trigger1 = Time = 0
 var(5) = ifelse(var(3)%10=1,1,0)
 
+
 [State 1100, VarSet]
 type = VarSet
 trigger1 = IsHelper

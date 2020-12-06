@@ -143,7 +143,7 @@
 [Data]
 life = 1000
 power = 10000
-attack = 100
+attack = 60
 defence = 100
 fall.defence_up = 0
 liedown.time = 34
@@ -10801,6 +10801,8 @@ trigger1 = partner,var(0) = -1 || !partner,var(0) || partner,var(0) = 2
 var(0) = 0
 ignorehitpause = 1
 
+
+
 [State -2, VarSet]
 type = VarSet
 triggerall = numenemy
@@ -13864,3 +13866,23 @@ trigger1 = StateNo = 5000 || StateNo = 5010 || StateNo = 5020 || StateNo = 5070 
 trigger2 = StateNo = 150 || StateNo = 152 || StateNo = 154
 trigger3 = (StateNo = 0 || StateNo = 99900) && (PrevStateno = [190,194]) && time = 1
 channel = 0
+
+
+[State -3 VarAdd]
+type = VarAdd
+trigger1 = (fvar(6) < 1000)
+ignorehitpause = 1
+fv = 6
+persistent = 1
+value = 1
+
+[State 0, VarSet]
+type = VarSet
+trigger1 = roundno = 1 && RoundState = 0
+fv = 6    ;fv = 10
+value = 1000
+;ignorehitpause = 
+;persistent = 
+
+
+

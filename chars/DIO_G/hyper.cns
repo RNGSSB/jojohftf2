@@ -5281,9 +5281,10 @@ value = 0
 
 [State 181, 2]
 type = PlaySnd
-Trigger1 = Time = 0
+Trigger1 = animelemtime(10) = 1
 value = 10000, 6
 channel = 0
+
 Volume = 500
 
 [State 181, 2]

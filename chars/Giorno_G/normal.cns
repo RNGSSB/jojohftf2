@@ -629,15 +629,6 @@ ownpal = 1
 persistent = 0
 ignorehitpause = 1
 
-[state 0]
-type = targetstate
-triggerall = var(44) = 0
-trigger1 = movehit
-trigger1 = var(44) := 1
-value = 5410 
-ignorehitpause = 0
-persistent = 0
-
 [State 200, Damage Dampen]
 type = varset
 trigger1 = movehit

@@ -96,16 +96,6 @@ p2facing = 1
 fall = 0 
 forcenofall = 1
 
-
-[state 0]
-type = targetstate
-triggerall = var(25) = 0
-trigger1 = movehit
-trigger1 = var(25) := 1
-value = 5410 
-ignorehitpause = 0
-persistent = 0
-
 [State 220, 音を鳴らす]
 type = PlaySnd
 trigger1 = AnimElem = 2

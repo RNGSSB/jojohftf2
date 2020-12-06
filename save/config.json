@@ -71,16 +71,16 @@
 	"PreloadingVersus": true,
 	"QuickContinue": false,
 	"RatioAttack": [
-		0.82,
 		1,
-		1.17,
-		1.3
+		1,
+		1,
+		1
 	],
 	"RatioLife": [
-		0.8,
 		1,
-		1.17,
-		1.4
+		1,
+		1,
+		1
 	],
 	"RoundsNumSingle": 2,
 	"RoundsNumTeam": 2,
@@ -94,7 +94,7 @@
 	"TrainingChar": "chars/training/training.def",
 	"TurnsRecoveryBase": 0,
 	"TurnsRecoveryBonus": 20,
-	"VolumeBgm": 80,
+	"VolumeBgm": 65,
 	"VolumeMaster": 100,
 	"VolumeSfx": 80,
 	"VRetrace": 0,

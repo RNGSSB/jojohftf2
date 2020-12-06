@@ -48,8 +48,8 @@ title.bgm.loop = 1        ;Set to 0 to prevent looping
 title.bgm.loopstart = 
 title.bgm.loopend = 
   ;Music to play at char select screen.
-select.bgm = 
-select.bgm.volume = 100
+select.bgm = sound/css.mp3
+select.bgm.volume = 120
 select.bgm.loop = 1
 select.bgm.loopstart = 
 select.bgm.loopend = 

@@ -3624,7 +3624,7 @@ ground.slidetime = 14
 ground.hittime = 14
 air.hittime = 14
 guard.ctrltime = 14
-ground.velocity = -9
+ground.velocity = -8
 guard.velocity = -7.5
 air.velocity = ifelse(-4.2*.9**((var(42)-1)+!var(42))>-.8,-.8,-4.2*.9**((var(42)-1)+!var(42))), ifelse((-4.2+(.8*((var(42)-1)+!var(42))))>0,0,(-4.2+(.8*((var(42)-1)+!var(42)))))
 ground.cornerpush.veloff = 0
@@ -3664,7 +3664,7 @@ ground.slidetime = 14
 ground.hittime = 14
 air.hittime = 14
 guard.ctrltime = 14
-ground.velocity = -9
+ground.velocity = -8
 guard.velocity = -7.5
 air.velocity = ifelse(-4.2*.9**((var(42)-1)+!var(42))>-.8,-.8,-4.2*.9**((var(42)-1)+!var(42))), ifelse((-4.2+(.8*((var(42)-1)+!var(42))))>0,0,(-4.2+(.8*((var(42)-1)+!var(42)))))
 ground.cornerpush.veloff = 0
@@ -3679,13 +3679,6 @@ yaccel = .35
 guard.kill = 0
 p2facing = 1
 
-[state 0]
-type = targetstate 
-triggerall = numhelper(54100) = 0
-trigger1 = movehit 
-value = 5410 
-ignorehitpause = 0
-persistent = 0
 
 [State -2]
 type = Helper

@@ -89,6 +89,9 @@ command = a
 time = 1
 
 
+
+
+
 ;-| Dir + Button |---------------------------------------------------------
 [Command]
 name = "down_a"
@@ -530,6 +533,21 @@ name = "Guard Cancel"
 command = ~F,D,DF,z
 time = 13
 
+[Command]
+name = "burst"
+command = x+y+z+c
+time = 2
+
+[Command]
+name = "burst"
+command = y+c
+time = 2
+
+[Command]
+name = "burst"
+command = z+c
+time = 2
+
 
 [Command]
 name = "longjump"
@@ -559,6 +577,8 @@ Time = 2
 name = "turtleuno"
 command = s
 Time = 2
+
+
 
 
 [Statedef -1]
@@ -1926,7 +1946,7 @@ triggerall = !var(40)
 triggerall = !var(24)
 triggerall = !var(0) || (var(0) = 1 && var(2)) || (var(0) = 3 && var(2))
 triggerall = roundstate = 2
-triggerall = command = "a"
+triggerall = command = "b"
 triggerall = statetype != A
 triggerall = NumHelper(10000)
 triggerall = Helper(10000),stateno != 10840
@@ -2840,14 +2860,13 @@ trigger1 = statetype = A
 trigger2 = stateno = 40 && time > 0
 
 
-
 [State -1, ?[???v?b?c?g?L???g?Z??]
 type = ChangeState
 triggerall = !NumPartner || (NumPartner && (sysvar(4) != [8,9]) && (sysvar(4) != 12) && (StateNo != [1251109,1251114])) 
 triggerall = stateno != 750
 triggerall = power >= 500*var(45)
 triggerall = !IShelper
-triggerall = command = "a" 
+triggerall = command = "a"
 triggerall = !var(0)
 triggerall = statetype != A 
 trigger1 = stateno = 195
@@ -2858,7 +2877,25 @@ trigger5 = stateno = 840
 value = 750
 ignorehitpause = 1
 
-
+[State -1, Burst]
+type = ChangeState
+value = 33300
+triggerall = command = "a" 
+triggerall = statetype != A 
+triggerall = fvar(6) = 1000
+triggerall = !var(49)
+trigger1 = ctrl
+trigger2 = !HitOver
+trigger3 = StateNo != 200
+trigger4 = StateNo != 210
+trigger5 = StateNo != [220,221]
+trigger6 = StateNo != 230
+trigger7 = StateNo != 240
+trigger8 = StateNo != 400
+trigger9 = StateNo != [410,411]
+trigger10 = StateNo != [420,421]
+trigger11 = StateNo != 430
+ignorehitpause = 1
 
 [State -1, AI Climax]
 type = VarSet

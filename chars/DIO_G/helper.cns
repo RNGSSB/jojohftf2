@@ -7421,13 +7421,6 @@ sprpriority = 1
 guard.kill = 0
 p2facing = 1
 
-[state 0]
-type = targetstate 
-triggerall = numhelper(54100) = 0
-trigger1 = movehit 
-value = 5410 
-ignorehitpause = 0
-persistent = 0
 
 [State -2]
 type = Helper

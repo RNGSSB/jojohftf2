@@ -137,7 +137,7 @@ victory1 = "Kono Dio Da"
 [Data]
 life = 1000
 power = 10000
-attack = 100
+attack = 60
 defence = 100
 fall.defence_up = 0
 liedown.time = 38
