@@ -1,0 +1,209 @@
+
+#===============================================================================
+# command code
+#===============================================================================
+[StateDef -1]
+
+#============|IF roundState = 2|================================================
+if roundState = 2 && !aiLevelF { #prevent attacks outside of fight state
+#-------------------------------------------------------------------------------
+#5A
+if Map(x) && command != "holddown" && !map(standActive){
+		if (stateNo = 200) && moveContact && Map(attack5AChainAmount) > 0 || ctrl && stateType = S {
+			changeState{value: 200}
+		}	
+}
+
+#-------------------------------------------------------------------------------
+#5B
+if (Map(y) && command != "holddown" && command != "holdfwd" || Map(z) && command != "holddown" && Map(standAvailable) = 0) && !map(standActive){
+		if (stateNo = 200 || stateNo = 400 || stateNo = 410) && moveContact && Map(attack5BChainAmount) > 0 || ctrl && stateType = S {
+			changeState{value: 210}
+		}
+}
+
+#-------------------------------------------------------------------------------
+#6B
+if Map(y) && command != "holddown" && command = "holdfwd" && !map(standActive){
+		if (stateNo = 200 || stateNo = 400 || stateNo = 410 || stateNo = 210) && moveContact || ctrl && stateType = S {
+			changeState{value: 220}
+		}
+}
+
+#-------------------------------------------------------------------------------
+#5C
+if Map(z) && command != "holddown" && Map(standAvailable) = 1 && !map(standActive){
+		if (stateNo = 200 || stateNo = 210 || stateNo = 400 || stateNo = 410 || stateNo = 220) && moveContact || ctrl && stateType = S {
+			changeState{value: 230}
+		}
+}
+
+#-------------------------------------------------------------------------------
+#5A Dash
+if Map(x) && command != "holddown" && !map(standActive){
+		if stateNo = 100 {
+			changeState{value: 201}
+		}	
+}
+
+#-------------------------------------------------------------------------------
+#5B Dash
+if (Map(y) && command != "holddown" || Map(z) && command != "holddown" && Map(standAvailable) = 0) && !map(standActive){
+		if stateNo = 100 {
+			changeState{value: 211}
+		}
+}
+
+#-------------------------------------------------------------------------------
+#5C Dash
+if Map(z) && command != "holddown" && Map(standAvailable) = 1 && !map(standActive){
+		if stateNo = 100 {
+			changeState{value: 231}
+		}
+}
+
+#-------------------------------------------------------------------------------
+#Stand On
+if Map(a) {
+	if stateType != A && map(standActive) = 0{
+		if ctrl && stateNo != 831 {
+			changeState{value: 830}
+		}
+	}
+}
+
+#-------------------------------------------------------------------------------
+#Stand Off
+if Map(a) {
+	if stateType != A && map(standActive) = 1{
+		if ctrl && stateNo != 830 {
+			changeState{value: 831}
+		}
+	}
+}
+
+#-------------------------------------------------------------------------------
+#Stand On
+if Map(a) {
+	if stateType = A && map(standActive) = 0{
+		if ctrl && stateNo != 833 {
+			changeState{value: 832}
+		}
+	}
+}
+
+#-------------------------------------------------------------------------------
+#Stand Off
+if Map(a) {
+	if stateType = A && map(standActive) = 1{
+		if ctrl && stateNo != 832 {
+			changeState{value: 833}
+		}
+	}
+}
+
+#-------------------------------------------------------------------------------
+#Taunt
+if command = "start" && command != "holddown" && stateType != A && ctrl {
+	changeState{value: 195}
+}
+
+#-------------------------------------------------------------------------------
+#2A
+if (Map(x) && command = "holddown" || Map(y) && command = "holddown" && Map(standAvailable) = 0 || Map(z) && command = "holddown" && Map(standAvailable) = 0) && !map(standActive){
+		if (stateNo = 200 || stateNo = 400) && moveContact && Map(attack2AChainAmount) > 0 || ctrl && stateType = C  {
+			changeState{value: 400}
+		}
+}
+
+#-------------------------------------------------------------------------------
+#2B
+if (Map(y) && command = "holddown" && Map(standAvailable) = 1) && !map(standActive){
+		if (stateNo = 200 || stateNo = 400 || stateNo = 210) && moveContact && Map(attack2BChainAmount) > 0 || ctrl && stateType = C {
+			changeState{value: 410}
+		}
+}
+
+#-------------------------------------------------------------------------------
+#2C
+if (Map(z) && command = "holddown" && Map(standAvailable) = 1) && !map(standActive){
+		if (stateNo = 200 || stateNo = 400 || stateNo = 210 || stateNo = 410 || stateNo = 220) && moveContact || ctrl && stateType = C {
+			changeState{value: 430}
+		}
+}
+
+#-------------------------------------------------------------------------------
+#2A Dash
+if (Map(x) && command = "holddown" || Map(y) && command = "holddown" && Map(standAvailable) = 0 || Map(z) && command = "holddown" && Map(standAvailable) = 0) && !map(standActive){
+		if stateNo = 100 {
+			changeState{value: 401}
+		}
+}
+
+#-------------------------------------------------------------------------------
+#2B Dash
+if Map(y) && command = "holddown" && Map(standAvailable) = 1 && !map(standActive){
+		if stateNo = 100 {
+			changeState{value: 411}
+		}
+}
+
+#-------------------------------------------------------------------------------
+#2C Dash
+if Map(z) && command = "holddown" && Map(standAvailable) = 1 && !map(standActive){
+		if stateNo = 100 {
+			changeState{value: 431}
+		}
+}
+
+#-------------------------------------------------------------------------------
+#j5A
+if Map(x) && !map(standActive) {
+	if stateType = A {
+		if (stateNo = 600) && moveContact || ctrl {
+			changeState{value: 600}
+		}	
+	}
+}
+
+#-------------------------------------------------------------------------------
+#j5B
+if Map(y) && !map(standActive){
+	if stateType = A {
+		if (stateNo = 600) && moveContact || ctrl {
+			changeState{value: 610}
+		}	
+	}
+}
+
+#-------------------------------------------------------------------------------
+#j5C
+if Map(z) && !map(standActive){
+	if stateType = A {
+		if (stateNo = 600 || stateNo = 610) && moveContact || ctrl {
+			changeState{value: 630}
+		}	
+	}
+}
+
+#-------------------------------------------------------------------------------
+#Stand j5B
+if Map(y) && map(standActive){
+	if stateType = A {
+		if (stateNo = 600) && moveContact || ctrl {
+			changeState{value: 710}
+		}	
+	}
+}
+
+#-------------------------------------------------------------------------------
+#Stand Off 236 A
+if Map(QCF) && Map(x) && !map(standActive) && map(standAvailable) = 1{
+	if stateType != S && ctrl || stateNo = [200, 430] && time <= 2 || moveContact && map(enableSpecialCancels){
+		changeState{value: 11001}
+	}
+}
+
+#End of file: roundState = 2
+#===============================================================================
+}

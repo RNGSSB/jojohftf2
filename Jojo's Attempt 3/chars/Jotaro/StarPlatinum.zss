@@ -1,0 +1,251 @@
+#===============================================================================
+# Stand On
+#===============================================================================
+[StateDef 10820;
+type: S; movetype: I; physics: S; ctrl: 0;
+anim: 10820;
+sprpriority: 0;]
+
+BindToParent{time: 99999; facing: 1; pos: 40}
+
+if animTime = 0{
+changeState{value: 10000;}
+}
+
+#===============================================================================
+# Stand On Air
+#===============================================================================
+[StateDef 10825;
+type: A; movetype: I; physics: N; ctrl: 0;
+anim: 10825;
+sprpriority: 0;]
+
+BindToParent{time: 99999; facing: 1; pos: 40}
+
+if parent, statetype != A{
+changeState{value: 10000;}
+}
+
+if parent, stateNo = 833{
+	DestroySelf{}
+}
+
+#===============================================================================
+# Idle
+#===============================================================================
+[StateDef 10000;
+type: S; movetype: I; physics: N; ctrl: 0;
+anim: 10000;
+sprpriority: 0;]
+
+BindToParent{time: 99999; facing: 1; pos: 40}
+
+if parent, anim = 0{
+if anim != 10000 {
+		changeAnim{value: 10000}
+	}
+}
+
+if parent, stateNo = 20{
+if command = "holdback" {
+	if anim != 10021 {
+		changeAnim{value: 10021}
+	}
+} else if command = "holdfwd" {
+	if anim != 10020 {
+		changeAnim{value: 10020}
+	}
+}
+}
+
+if parent, stateNo = 100 && parent, time = 1{
+if anim != 10100 {
+		changeAnim{value: 10100}
+	}
+}
+else if parent, stateNo = 105 && parent, time = 1{
+if anim != 10105 {
+		changeAnim{value: 10105}
+	}
+}
+
+if anim = 10100 && animTime = 0{
+	changeAnim{value: 10000}
+}
+
+if anim = 10105 && animTime = 0{
+	changeAnim{value: 10000}
+}
+
+if parent, anim = 10 && parent, time = 1{
+if anim != 10010 {
+		changeAnim{value: 10010}
+	}
+}
+
+if anim = 10010 && animTime = 0{
+		changeAnim{value: 10011}
+}
+
+if parent, anim = 12 && parent, time = 1{
+if anim != 10012 {
+		changeAnim{value: 10012}
+	}
+}
+
+if anim = 10012 && animTime = 0{
+	changeAnim{value: 10000}
+}
+
+if parent, anim = 195{
+if anim != 10195 {
+		changeAnim{value: 10195}
+	}
+}
+
+if parent, stateNo = 831 {
+	DestroySelf{}
+}
+
+if parent, statetype = A{
+changeState{value: 10001}
+}
+
+
+#===============================================================================
+# Air Idle
+#===============================================================================
+[StateDef 10001;
+type: A; movetype: I; physics: N; ctrl: 0;
+anim: 10000;
+sprpriority: 0;]
+
+BindToParent{time: 99999; facing: 1; pos: 40}
+
+if parent, stateNo = 40{
+if anim != 10040 {
+		changeAnim{value: 10040}
+	}
+}
+
+if parent, anim = 41{
+if anim != 10041 {
+		changeAnim{value: 10041}
+	}
+}
+if parent, anim = 42{
+if anim != 10042 {
+		changeAnim{value: 10042}
+	}
+}
+if parent, anim = 43{
+if anim != 10043 {
+		changeAnim{value: 10043}
+	}
+}
+if parent, anim = 44{
+if anim != 10044 {
+		changeAnim{value: 10044}
+	}
+}
+if parent, anim = 45{
+if anim != 10045 {
+		changeAnim{value: 10045}
+	}
+}
+if parent, anim = 46{
+if anim != 10046 {
+		changeAnim{value: 10046}
+	}
+}
+
+if parent, statetype != A{
+changeState{value: 10000}
+}
+
+if parent, stateNo = 710 && stateNo != 10710{
+	changeState{value: 10710}
+}
+
+if parent, stateNo = 833{
+	DestroySelf{}
+}
+
+#===============================================================================
+# Stand j5B
+#===============================================================================
+[StateDef 10710;
+type: A; movetype: A; physics: N; ctrl: 0;
+anim: 710;
+sprpriority: 0;]
+
+BindToParent{time: 99999; facing: 1; pos: 40}
+
+if animElem = 3 {
+
+}
+
+if parent, statetype != A{
+changeState{value: 10000}
+}
+
+#===============================================================================
+# ORAORAORA (236 A)
+#===============================================================================
+[StateDef 11000;
+type: S; movetype: A; physics: S; ctrl: 0;
+anim: 11000;
+sprpriority: 0;]
+
+if time = 0{
+call AttackLevel0();
+rootMapSet{map:"standAvailable"; value: 0}
+mapSet{map:"hitStop"; value: 4}
+call InitSpecialMove();
+velSet{x: 5}
+
+}
+
+if time = 36 && time < 47{
+mapSet{map:"groundPushbackX"; value: -5}
+mapSet{map:"groundPushbackY"; value: -5}
+}
+
+if time = 14 && time < 25 || time = 25 && time < 36 || time = 36 && time < 47
+{
+hitDef{
+		attr: S, NA;                 
+		damage: map(attackDamage), map(chipDamage);                
+		animtype: Light;             
+		guardflag: M;        
+		hitflag: MAF;             
+		priority: map(hitPriority), Hit;                     
+		pausetime: map(hitStop), map(hitStop);             
+		sparkno: map(hitSparkNum);                   
+		sparkxy: map(sparkPosX), map(sparkPosY);                                           
+		hitsound: map(attackSoundGroup), map(attackSoundIndex);               
+		guardsound: map(guardSoundGroup), map(guardSoundIndex);             
+		ground.type: High;                   
+		ground.hittime: map(hitStunAmount);  
+		air.hittime: map(untechTime); 
+		guard.hittime:  map(blockStunAmount);
+		ground.velocity: map(groundPushbackX), map(groundPushbackY); 
+		ground.slidetime: map(hitSlideTime);
+		air.velocity: map(airPushbackX), map(airPushbackY);  
+		guard.velocity: map(groundGuardPushbackX);
+		guard.slidetime: map(guardSlideTime);
+		airguard.velocity: map(airGuardPushbackX), map(airGuardPushbackY); 
+		air.type: High;  
+		yaccel: map(Gravity);
+		fall: map(hardKnockDown);
+		fall.recover: map(hardKnockDownRecover);
+		kill:  map(AttackKill);
+		guard.kill: map(GuardKill);
+	}
+}
+
+
+if animTime = 0{
+rootMapSet{map:"standAvailable"; value: 1}
+DestroySelf{}
+}
